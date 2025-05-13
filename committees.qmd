@@ -1,0 +1,32 @@
+---
+title: "Committees"
+---
+
+
+### Programme committee
+- [Aida Abiad](https://aidaabiad.win.tue.nl/), Eindhoven University of Technology (TU/e), Vrije Universiteit Brussel.
+- [Marie Albenque](https://www.irif.fr/%7Emalbenque/), Université Paris Cité, CNRS.
+- [Julia Böttcher](https://personal.lse.ac.uk/boettche/), London School of Economics and Political Science.
+- [Maria Bras-Amorós](https://web.mat.upc.edu/maria.bras/), Universitat Politècnica de Catalunya.
+- [Vida Dujmović](https://cglab.ca/~vida/), University of Ottawa.
+- [Alberto Espuny Díaz](https://sites.google.com/view/alberto-espuny-diaz/), University of Heidelberg.
+- [Delia Garijo](https://personal.us.es/dgarijo/) (co-chair), Universidad de Sevilla.
+- [Andrew Goodall](https://iuuk.mff.cuni.cz/~andrew/), Charles University
+- [Gyula Károlyi](https://karolyigy.web.elte.hu/), Eötvös Loránd University and Renyi Institute Budapest.
+- [Daniel Král’](https://www.ucw.cz/~kral/index.html.en), Leipzig University, Max Planck Institute for Mathematics in the Sciences.
+- [Amanda Montejano](https://umdi-juriquilla.fciencias.unam.mx/somos/fichas/profs/DraAmandaMontejano.html), Universidad Nacional Autónoma de México.
+- [Eran Nevo](https://math.huji.ac.il/~nevo/), Hebrew University.
+- [Marc Noy](https://web.mat.upc.edu/marc.noy/), Universitat Politècnica de Catalunya.
+- [Guillem Perarnau](https://web.mat.upc.edu/guillem.perarnau/) (co-chair), Universitat Politècnica de Catalunya.
+- [Gelasio Salazar](https://www.ifisica.uaslp.mx/~gsalazar/), Universidad Autonoma de San Luis Potosi.
+- [Francisco Santos](https://personales.unican.es/santosf/), Universidad de Cantabria.
+- [Alex Scott](https://people.maths.ox.ac.uk/scott/), University of Oxford.
+- [Julia Wolf](https://www.dpmms.cam.ac.uk/person/jw291), University of Cambridge.
+
+
+### Organizing committee
+
+- [Pedro A. García-Sánchez](https://www.ugr.es/local/pedro), University of Granada, Spain (chair)
+- [Javier Lobillo Borrero](https://www.ugr.es/local/jlobillo), University of Granada, Spain
+- [Aureliano M. Robles-Pérez](https://www.ugr.es/local/arobles), University of Granada, Spain
+- [Evangelina Santos Aláez](https://www.ugr.es/local/esantos), University of Granada, Spain

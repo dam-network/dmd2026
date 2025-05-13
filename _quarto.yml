@@ -1,0 +1,48 @@
+project:
+  type: website
+
+
+website:
+  title: "DMD 2026"
+  description: "Granada, 29 June - 1 July 2026"
+  image: img/logo-mdm-2026.svg
+  favicon: img/logo-mdm-2026-small.png
+
+  #navbar:
+  #  search: true
+  #  logo: img/logo-mdm-2026.svg
+    # left:
+    #  - history.qmd
+    #  - committees.qmd
+
+  sidebar:
+    logo: img/logo-mdm-2026.svg
+    contents:
+      - text: "Home"
+        href: index.qmd
+      - submissions.qmd
+      - registration.qmd
+      - committees.qmd
+      - plenary.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Important Dates"
+        href: index.qmd#important-dates
+      - history.qmd
+      - venue.qmd
+      - text: "Accommodation"
+        href: venue.html#accommodation
+      - llull.qmd
+       
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
+      gutter-width: 1.5rem
+

@@ -1,0 +1,27 @@
+---
+title: "Registration"
+---
+
+### Registration fees
+
+Page under construction.
+
+<!-- All registration types include attendance to all sessions, conference material, coffee breaks, a welcome reception, and a gala dinner 
+
+The conference fees are as follows:
+
+
+::: {.center-table}
+
+|  |  Early (until DD MM) |  Late (from DD MM +1) |
+| --- | :---: | :---: |
+|Regular | € X | € X+50 |
+| Student (*) |  € Y |  € Y+40 |
+
+:::
+
+(*) Students include Doctoral, Master and Bachelor students or equivalent, as well as unemployed people.
+A proof of this status will be requested when registering.
+
+
+### Registration form-->

@@ -1,0 +1,54 @@
+---
+title: "Discrete Mathematics Days 2026"
+subtitle: "Granada, 29 June - 1 July 2026"
+# toc: false
+---
+
+![](img/alhambra-sierra.png){width="100%" .roundrect}
+
+
+The conference will take place at the [Faculty of Sciences](https://fciencias.ugr.es) of the [University of Granada](https://ugr.es).
+
+The University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.
+
+
+The main focus of this international conference is on current topics in Discrete Mathematics, including (but not limited to):
+
+- Coding Theory and Cryptography.
+- Combinatorial Number Theory.
+- Combinatorics.
+- Discrete and Computational Geometry.
+- Discrete Optimization.
+- Graph Theory.
+- Theoretical Computer Science.
+
+
+### Important dates
+
+(To be announced.)
+
+- Deadline for submitting extended abstracts.
+- Communication of acceptance.
+- Deadline for submitting final versions of accepted contributions.
+- Deadline for early registration.
+
+### Funding
+
+
+:::: {.columns}
+
+::: {.column width="15%" .add-space}
+::: {style="text-align:center;"}
+![RED2024-153572-T. Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg)
+:::
+:::
+
+::: {.column width="15%"}
+::: {style="text-align:center;"}
+![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=85%}
+:::
+:::
+
+
+::::
+

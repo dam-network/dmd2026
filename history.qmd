@@ -1,0 +1,24 @@
+---
+title: "Previous editions"
+---
+
+Known as Discrete Mathematics Days since 2016, this conference inherits the tradition of the Jornadas de Matemática Discreta y Algorítmica (JMDA), the Spanish biennial meeting on Discrete Mathematics started in 1998.
+
+## Previous editions of the Discrete Mathematics Days
+
+- [Alcalá de Henares](https://dmd2024.web.uah.es), 3-5 July, 2024
+- [Santander](https://dmd2022.unican.es/), 4-6 July, 2022 (postponed from 2020).
+- [Seville](http://congreso.us.es/dmd2018), 27-29 June, 2018.
+- [Barcelona](https://web.archive.org/web/20170504215505/http://discretemath.upc.edu/jmda16/), 6-8 July, 2016.
+
+## Previous editions of the Jornadas de Matemática Discreta y Algorítmica (JMDA)
+
+- [Tarragona](https://web.archive.org/web/20170504215505/http://deim.urv.cat/%7Ediscrete-math/JMDA2014/) (2014).
+- [Almerí­a](https://web.archive.org/web/20170504215505/http://www.ual.es/Congresos/JMDA2012/) (2012).
+- [Castro Urdiales](https://web.archive.org/web/20170504215505/http://www.jmda2010.unican.es/), Cantabria (2010).
+- [Lleida](https://web.archive.org/web/20170504215505/http://www.jmda2008.udl.cat/) (2008).
+- Soria (2006).
+- [Cercedilla](https://web.archive.org/web/20170504215505/http://www3.uah.es/jmda/), Madrid (2004).
+- Mairena del Aljarafe, Sevilla (2002).
+- Palma de Mallorca (2000).
+- Barcelona (1998).

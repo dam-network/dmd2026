@@ -1,0 +1,26 @@
+---
+title: Submissions
+--- 
+
+
+The program of the workshop consists of four one-hour invited talks plus a number of short (20 min.) contributed talks and a poster session.
+
+If you wish to contribute a talk or poster, please submit an extended abstract of it via our EasyChair Submission link.
+
+<!--Submissions will be reviewed and accepted by the Programme Committee. In order to be accepted for the conference, submissions must contain original and interesting research in the area of discrete mathematics. If too many acceptable talks are submitted, the [Programme Committee](committees.qmd#scientific-committee) may ask some of them to be presented as posters instead.-->
+
+Submissions will be reviewed and accepted by the Program Committee. In order to be accepted for the conference, submissions must contain original and interesting research in the area of discrete mathematics. The results presented in a submission should not have been published (on-line or in print) in a journal or in peer-reviewed conference proceedings in 2025 or earlier. Simultaneous submission of a full version of your contribution to a journal or another conference is acceptable. 
+
+If too many acceptable talks are submitted, the [Programme Committee](committees.qmd#scientific-committee) may ask some of them to be presented as posters instead.
+
+After the submissions have been reviewed by the Program Committee, source LaTeX files of final versions of accepted submissions must be sent to the conference email address (dmd2026@ugr.es) before the deadline provided [here](index.qmd#important-dates).
+
+The extended abstracts of accepted talks and posters will be made available at the web of the workshop. 
+
+Extended abstracts must use our template LaTeX format and are limited to a maximum of **five pages** (template available [here](https://www.overleaf.com/read/rzrnpvbbscvd#6233b6)).
+
+
+### Talks
+
+### Posters
+

@@ -1,0 +1,32 @@
+---
+title: "Venue"
+---
+
+::: {style="text-align:right;"}
+![[Andreuvv - Trabajo propio, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=45742894)](img/fciencias.png){.roundrect}
+:::
+
+The conference will take place at the [Faculty of Sciences](https://fciencias.ugr.es) of the [University of Granada](https://ugr.es).
+
+<!--The University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.-->
+
+### How to arrive
+
+- Via [Granada airport](http://www.aena.es/es/aeropuerto-federico-garcia-lorca-granada-jaen/index.html). The airport is 17 km from downtown. Correspondences between Granada and its airport can be done by taxi or bus. The cab fare is about 30-35€. There is a 3€ bus airport-downtown (line 245), with different stops. The nearest one to the Faculty of Sciences is the eighth stop, at “Avenida de la Constitución Hotel Cóndor”.
+
+- Via [Malaga airport](http://www.aena.es/es/aeropuerto-malaga/index.html). The bus company Alsa has a service connecting directly the airport of Málaga with the city of Granada. From this airport, there are frequent connections (approximately one per hour). For more information, please visit the [Alsa website](https://www.alsa.es). Another available connection is through the bus station in Málaga, from where one can find buses leaving to Granada each hour. These buses arrive at the bus station in Granada, from where one can take a taxi to downtown (about 10€) or a city bus (lines SN2 or SN5) in order to arrive to the institute (see here for a map of the city buses in Granada).
+
+- By [high-speed train](https://www.renfe.com/es/es). There are daily connections to and from Granada with Madrid and Barcelona. The train station in Granada is around five-minute walking distance from the Faculty of Sciences.
+
+### Accommodation
+
+List of hotels nearby
+
+| Name | &nbsp; Category | &nbsp; website |
+| --- | :---: | :---: | :---: |
+|Hotel Turia  |  4* | [web](https://turiahotels.es/en/turia-granada)
+| Hotel Granada Center  |   4* | [web](https://www.hotelescenter.es/en/hotel-granada-center/) |
+| Hotel Catalonia |  4* | [web](https://www.cataloniahotels.com/en/hotel/catalonia-granada) |
+| Urban dream Granada | 4* | [web](https://www.urbandreamgranada.com/en/) |
+| Hotel Don Juan |  3* | [web](https://www.hoteldonjuan.com/EN/home.html?_gl=1*1oeqkhv*_up*MQ..&gclid=Cj0KCQjw4Oe4BhCcARIsADQ0csm0hXUAk-l6T2NiP-a6hAXreIic68wG3MsGeMJCfo7D21-Au_E-mRAaAtKxEALw_wcB) |
+| Hotel Reina Cristina | 3* | [web](https://www.hotelreinacristina.com/en/)

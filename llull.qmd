@@ -1,0 +1,32 @@
+---
+title: "Ramon Llull prize"
+---
+
+The Ramon Llull Prize in Discrete Mathematics is an academic award for outstanding doctoral thesis in Discrete Mathematics, awarded every two years by the Spanish [Red de Matemática Discreta y Algorítmica](https://dam-network.github.io/).
+
+The prize winner will be announced during the Discrete Mathematics Days, where the awardee will give a prize talk.
+
+
+The topics of the prize cover all areas related to Discrete Mathematics, including but not limited to
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+- Coding Theory and Cryptography
+- Combinatorial Number Theory
+- Combinatorics
+- Discrete and Computational Geometry
+- Discrete Optimization
+- Graph Theory
+- Theoretical Computer Science
+
+:::
+
+::: {.column width="25%"}
+![](https://dam-network.github.io/ramon-llull/Images/RLL1.png)
+:::
+
+::::
+
+For more details, check the [Ramon Llull Prize web page](https://dam-network.github.io/ramon-llull/).
