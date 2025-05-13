@@ -1,2 +1,2 @@
 # dmd2026
-Discrete Mathematics Days 2026
+Website for the Discrete Mathematics Days 2026
