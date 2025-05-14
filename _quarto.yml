@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - DMD2026_LaTeX_template.zip
 
 
 website:

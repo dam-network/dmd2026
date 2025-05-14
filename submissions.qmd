@@ -17,7 +17,7 @@ After the submissions have been reviewed by the Program Committee, source LaTeX 
 
 The extended abstracts of accepted talks and posters will be made available at the web of the workshop. 
 
-Extended abstracts must use our template LaTeX format and are limited to a maximum of **five pages** (template available [here](https://www.overleaf.com/read/rzrnpvbbscvd#6233b6)).
+Extended abstracts must use our template LaTeX format and are limited to a maximum of **five pages** (template available [here](DMD2026_LaTeX_template.zip)).
 
 
 ### Talks
