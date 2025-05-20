@@ -39,13 +39,13 @@ The main focus of this international conference is on current topics in Discrete
 
 ::: {.column width="15%" .add-space}
 ::: {style="text-align:center;"}
-![RED2024-153572-T. Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg)
+[![RED2024-153572-T. Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg)](https://dam-network.github.io)
 :::
 :::
 
 ::: {.column width="15%"}
 ::: {style="text-align:center;"}
-![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=85%}
+[![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=85%}](https://fciencias.ugr.es)
 :::
 :::
 
