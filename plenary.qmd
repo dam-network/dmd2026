@@ -3,4 +3,8 @@ title: "Plenary speakers"
 ---
 
 <!--A list of plenary speakers-->
-To be announced.
+
+- [Martina Juhnke](https://tina.juhnix.net/) (Universität Osnabrück) 
+- [Kolja Knauer](https://www.ub.edu/comb/koljaknauer/) (Universitat de Barcelona) 
+- [Lisa Sauermann](https://www.iam.uni-bonn.de/users/sauermann/home) (Universität Bonn)  
+- [Dimitrios Thilikos](https://www.lirmm.fr/~thilikosto/) (LIRMM, Montpellier)  
