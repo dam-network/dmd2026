@@ -15,7 +15,7 @@ title: "Committees"
 - [Gyula Károlyi](https://karolyigy.web.elte.hu/), Eötvös Loránd University and Renyi Institute Budapest.
 - [Daniel Král’](https://www.ucw.cz/~kral/index.html.en), Leipzig University, Max Planck Institute for Mathematics in the Sciences.
 - [Amanda Montejano](https://umdi-juriquilla.fciencias.unam.mx/somos/fichas/profs/DraAmandaMontejano.html), Universidad Nacional Autónoma de México.
-- [Eran Nevo](https://math.huji.ac.il/~nevo/), Universidad de Valladolid y Hebrew University.
+- [Eran Nevo](https://math.huji.ac.il/~nevo/), Universidad de Valladolid, Hebrew University.
 - [Marc Noy](https://web.mat.upc.edu/marc.noy/), Universitat Politècnica de Catalunya.
 - [Guillem Perarnau](https://web.mat.upc.edu/guillem.perarnau/) (co-chair), Universitat Politècnica de Catalunya.
 - [Gelasio Salazar](https://www.ifisica.uaslp.mx/~gsalazar/), Universidad Autonoma de San Luis Potosi.
