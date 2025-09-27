@@ -5,7 +5,11 @@ format:
     pdf: default
 ---
 
-**Rooms**: Salón de Grados and Sala de Conferencias, both located at the math building of the Faculty of Sciences
+**Rooms**: Salón de Grados and Sala de Conferencias, both located at the math building of the [Faculty of Sciences](https://fciencias.ugr.es/)
+
+### 28 June
+
+20:00 Reception. [Carmen de la Victoria](https://carmendelavictoria.ugr.es/)
 
 ### 29 June
 
@@ -15,5 +19,12 @@ format:
 
 ### 30 June
 
+#### Morning session
+
+#### Evening session
+
+#### Social event and dinner
 
 ### 1 July
+
+#### Morning session
