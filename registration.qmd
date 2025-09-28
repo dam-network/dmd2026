@@ -6,17 +6,17 @@ title: "Registration"
 
 Page under construction.
 
-<!-- All registration types include attendance to all sessions, conference material, coffee breaks, a welcome reception, and a gala dinner 
+All registration types include attendance to all sessions, conference material, coffee breaks, a welcome reception, and a gala dinner 
 
 The conference fees are as follows:
 
 
 ::: {.center-table}
 
-|  |  Early (until DD MM) |  Late (from DD MM +1) |
+|  |  Early (until 29 May 2026) |  Late (from 30 May 2026) |
 | --- | :---: | :---: |
-|Regular | € X | € X+50 |
-| Student (*) |  € Y |  € Y+40 |
+| Regular | € 175 | € 225 |
+| Student (*) |  € 100 |  € 140 |
 
 :::
 
@@ -24,4 +24,6 @@ The conference fees are as follows:
 A proof of this status will be requested when registering.
 
 
-### Registration form-->
+### Registration form
+
+Will be available soon.
