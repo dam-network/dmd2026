@@ -8,7 +8,7 @@ Known as Discrete Mathematics Days since 2016, this conference inherits the trad
 
 - [Alcalá de Henares](https://dmd2024.web.uah.es), 3-5 July, 2024
 - [Santander](https://dmd2022.unican.es/), 4-6 July, 2022 (postponed from 2020).
-- [Seville](http://congreso.us.es/dmd2018), 27-29 June, 2018.
+- [Seville](https://web.archive.org/web/20190417002813/http://congreso.us.es/dmd2018/), 27-29 June, 2018.
 - [Barcelona](https://web.archive.org/web/20170504215505/http://discretemath.upc.edu/jmda16/), 6-8 July, 2016.
 
 ## Previous editions of the Jornadas de Matemática Discreta y Algorítmica (JMDA)
