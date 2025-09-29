@@ -15,14 +15,16 @@ The conference fees are as follows:
 
 |  |  Early (until 29 May 2026) |  Late (from 30 May 2026) |
 | --- | :---: | :---: |
-| Regular | € 175 | € 225 |
-| Student (*) |  € 100 |  € 140 |
+| Regular | € 150 | € 200 |
+| Student (*) |  € 80 |  € 120 |
 
 :::
 
 (*) Students include Doctoral, Master and Bachelor students or equivalent, as well as unemployed people.
 A proof of this status will be requested when registering.
 
+
+A limited number of accommodation grants will be available for graduate and PhD students presenting a talk or poster at the conference.
 
 ### Registration form
 
