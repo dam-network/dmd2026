@@ -37,16 +37,32 @@ The main focus of this international conference is on current topics in Discrete
 
 ::: {.column width="15%" .add-space}
 ::: {style="text-align:center;"}
-[![RED2024-153572-T. Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg)](https://dam-network.github.io)
+[![RED2024-153572-T<br> Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg)](https://dam-network.github.io)
 :::
 :::
 
-::: {.column width="15%"}
+::: {.column width="15%" .add-space}
 ::: {style="text-align:center;"}
-[![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=85%}](https://fciencias.ugr.es)
+[![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=80%}](https://fciencias.ugr.es)
+:::
+:::
+
+::: {.column width="35%"}
+::: {style="text-align:center;"}
+[![Instituto de Matemáticas<br>Universidad de Granada](img/logo-IMAG.png)](https://imag.ugr.es)
 :::
 :::
 
 
 ::::
 
+<!--
+::: {layout="[15,-2,10]" layout-valign="bottom"}
+[![RED2024-153572-T<br> Red de Matemática Discreta y Algorítmica](img/logo_mda-net.svg){width="20%"}](https://dam-network.github.io)
+
+[![Facultad de Ciencias<br> Universidad de Granada](img/logo-ciencias.png){width=20%}](https://fciencias.ugr.es)
+
+[![Instituto de Matemáticas<br>Universidad de Granada](img/logo-IMAG.png){width=20%}](https://imag.ugr.es)
+
+:::
+-->
