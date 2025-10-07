@@ -9,7 +9,7 @@ title: "Committees"
 - [Julia Böttcher](https://personal.lse.ac.uk/boettche/), London School of Economics and Political Science.
 - [Maria Bras-Amorós](https://web.mat.upc.edu/maria.bras/), Universitat Politècnica de Catalunya.
 - [Vida Dujmović](https://cglab.ca/~vida/), University of Ottawa.
-- [Alberto Espuny Díaz](https://sites.google.com/view/alberto-espuny-diaz/), University of Heidelberg.
+- [Alberto Espuny Díaz](https://sites.google.com/view/alberto-espuny-diaz/), Universitat de Barcelona.
 - [Delia Garijo](https://personal.us.es/dgarijo/) (co-chair), Universidad de Sevilla.
 - [Andrew Goodall](https://iuuk.mff.cuni.cz/~andrew/), Charles University
 - [Gyula Károlyi](https://karolyigy.web.elte.hu/), Eötvös Loránd University and Renyi Institute Budapest.
