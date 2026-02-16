@@ -9,6 +9,8 @@ website:
   description: "Granada, 29 June - 1 July 2026"
   image: img/logo-mdm-2026.svg
   favicon: img/logo-mdm-2026-small.png
+  back-to-top-navigation: true
+
 
   #navbar:
   #  search: true
