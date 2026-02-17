@@ -11,7 +11,6 @@ website:
   favicon: img/logo-mdm-2026-small.png
   back-to-top-navigation: true
   page-footer: "Contact: [dmd2026@ugr.es](mailto:dmd2026@ugr.es)" 
-
   #navbar:
   #  search: true
   #  logo: img/logo-mdm-2026.svg
@@ -44,6 +43,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    email-obfuscation: javascript
     grid:
       sidebar-width: 200px
       body-width: 1200px
