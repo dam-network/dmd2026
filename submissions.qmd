@@ -19,6 +19,7 @@ The extended abstracts of accepted talks and posters will be made available at t
 
 Extended abstracts must use our template LaTeX format and are limited to a maximum of **five pages** (template available [here](DMD2026_LaTeX_template.zip)).
 
+Submissions are done through the [EasyChair platform](https://easychair.org/my2/conference?conf=dmd2026). 
 
 ### Talks
 

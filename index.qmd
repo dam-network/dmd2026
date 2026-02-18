@@ -25,10 +25,10 @@ The main focus of this international conference is on current topics in Discrete
 
 ### Important dates
 
-- Deadline for submitting extended abstracts: 7 April 2026 (23:59 CET)
+- Deadline for [submitting](submissions.qmd) extended abstracts: 7 April 2026 (23:59 CET)
 - Communication of acceptance: 15 May 2026
 - Deadline for submitting final versions of accepted contributions: 29 May 2026
-- Deadline for early registration: 29 May 2026
+- Deadline for early [registration](registration.qmd): 29 May 2026
 
 ### Funding
 
