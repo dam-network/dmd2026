@@ -15,7 +15,7 @@ If too many acceptable talks are submitted, the [Programme Committee](committees
 
 After the submissions have been reviewed by the Program Committee, source LaTeX files of final versions of accepted submissions must be sent to the conference email address (dmd2026@ugr.es) before the deadline provided [here](index.qmd#important-dates).
 
-The extended abstracts of accepted talks and posters will be made available at the web of the workshop. 
+Abstracts of accepted talks and posters will be made available at the web of the workshop and extended abstracts will be later published by Birkäuser (Research Perspectives).
 
 Extended abstracts must use our template LaTeX format and are limited to a maximum of **five pages** including references (template available [here](DMD2026_LaTeX_template.zip)).
 
