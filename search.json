@@ -1,5 +1,35 @@
 [
   {
+    "objectID": "submissions.html",
+    "href": "submissions.html",
+    "title": "Submissions",
+    "section": "",
+    "text": "The program of the workshop consists of four one-hour invited talks plus a number of short (20 min.) contributed talks and a poster session.\nIf you wish to contribute a talk or poster, please submit an extended abstract of it via our EasyChair Submission link.\n\nSubmissions will be reviewed and accepted by the Program Committee. In order to be accepted for the conference, submissions must contain original and interesting research in the area of discrete mathematics. The results presented in a submission should not have been published (on-line or in print) in a journal or in peer-reviewed conference proceedings in 2025 or earlier. Simultaneous submission of a full version of your contribution to a journal or another conference is acceptable.\nIf too many acceptable talks are submitted, the Programme Committee may ask some of them to be presented as posters instead.\nAfter the submissions have been reviewed by the Program Committee, source LaTeX files of final versions of accepted submissions must be sent to the conference email address (dmd2026@ugr.es) before the deadline provided here.\nAbstracts of accepted talks and posters will be made available at the web of the workshop and extended abstracts will be later published by Birkäuser (Research Perspectives).\nExtended abstracts must use our template LaTeX format and are limited to a maximum of five pages including references (template available here).\nSubmissions are done through the EasyChair platform.\n\nTalks\n\n\nPosters\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Submissions"
+    ]
+  },
+  {
+    "objectID": "plenary.html",
+    "href": "plenary.html",
+    "title": "Plenary speakers",
+    "section": "",
+    "text": "Martina Juhnke (Universität Osnabrück)\nKolja Knauer (Universitat de Barcelona)\nLisa Sauermann (Universität Bonn)\n\nDimitrios Thilikos (LIRMM, Montpellier)\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Plenary speakers"
+    ]
+  },
+  {
+    "objectID": "llull.html",
+    "href": "llull.html",
+    "title": "Ramon Llull prize",
+    "section": "",
+    "text": "The Ramon Llull Prize in Discrete Mathematics is an academic award for outstanding doctoral thesis in Discrete Mathematics, awarded every two years by the Spanish Red de Matemática Discreta y Algorítmica.\nThe prize winner will be announced during the Discrete Mathematics Days, where the awardee will give a prize talk.\nThe topics of the prize cover all areas related to Discrete Mathematics, including but not limited to\n\n\n\nCoding Theory and Cryptography\nCombinatorial Number Theory\nCombinatorics\nDiscrete and Computational Geometry\nDiscrete Optimization\nGraph Theory\nTheoretical Computer Science\n\n\n\n\n\nFor more details, check the Ramon Llull Prize web page.\n\n\n\n Back to top",
+    "crumbs": [
+      "Ramon Llull prize"
+    ]
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule of the DMD 2026",
@@ -40,26 +70,6 @@
     ]
   },
   {
-    "objectID": "registration.html",
-    "href": "registration.html",
-    "title": "Registration",
-    "section": "",
-    "text": "Registration fees\nPage under construction.\nAll registration types include attendance to all sessions, conference material, coffee breaks, a welcome reception, and a gala dinner\nThe conference fees are as follows:\n\n\n\n\n\nEarly (until 29 May 2026)\nLate (from 30 May 2026)\n\n\n\n\nRegular\n€ 150\n€ 200\n\n\nStudent (*)\n€ 80\n€ 120\n\n\n\n\n(*) Students include Doctoral, Master and Bachelor students or equivalent, as well as unemployed people. A proof of this status will be requested when registering.\nA limited number of accommodation grants will be available for graduate and PhD students presenting a talk or poster at the conference.\n\n\nRegistration form\nRegistration can be done through this form.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Registration"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Discrete Mathematics Days 2026",
-    "section": "",
-    "text": "The conference will take place at the Faculty of Sciences of the University of Granada.\nThe University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.\nThe main focus of this international conference is on current topics in Discrete Mathematics, including (but not limited to):\n\nCoding Theory and Cryptography.\nCombinatorial Number Theory.\nCombinatorics.\nDiscrete and Computational Geometry.\nDiscrete Optimization.\nGraph Theory.\nTheoretical Computer Science.\n\n\nImportant dates\n\nDeadline for submitting extended abstracts: 7 April 2026 (23:59 AoE)\nCommunication of acceptance: 15 May 2026\nDeadline for submitting final versions of accepted contributions: 29 May 2026\nDeadline for early registration: 29 May 2026\n\n\n\nFunding\n\n\n\n\n\n\nRED2024-153572-T Red de Matemática Discreta y Algorítmica\n\n\n\n\n\n\n\n\nFacultad de Ciencias Universidad de Granada\n\n\n\n\n\n\n\n\nInstituto de MatemáticasUniversidad de Granada\n\n\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
     "objectID": "committees.html",
     "href": "committees.html",
     "title": "Committees",
@@ -80,33 +90,23 @@
     ]
   },
   {
-    "objectID": "plenary.html",
-    "href": "plenary.html",
-    "title": "Plenary speakers",
+    "objectID": "registration.html",
+    "href": "registration.html",
+    "title": "Registration",
     "section": "",
-    "text": "Martina Juhnke (Universität Osnabrück)\nKolja Knauer (Universitat de Barcelona)\nLisa Sauermann (Universität Bonn)\n\nDimitrios Thilikos (LIRMM, Montpellier)\n\n\n\n\n Back to top",
+    "text": "Registration fees\nPage under construction.\nAll registration types include attendance to all sessions, conference material, coffee breaks, a welcome reception, and a gala dinner\nThe conference fees are as follows:\n\n\n\n\n\nEarly (until 29 May 2026)\nLate (from 30 May 2026)\n\n\n\n\nRegular\n€ 150\n€ 200\n\n\nStudent (*)\n€ 80\n€ 120\n\n\n\n\n(*) Students include Doctoral, Master and Bachelor students or equivalent, as well as unemployed people. A proof of this status will be requested when registering.\nA limited number of accommodation grants will be available for graduate and PhD students presenting a talk or poster at the conference.\n\n\nRegistration form\nRegistration can be done through this form.\n\n\n\n\n Back to top",
     "crumbs": [
-      "Plenary speakers"
+      "Registration"
     ]
   },
   {
-    "objectID": "llull.html",
-    "href": "llull.html",
-    "title": "Ramon Llull prize",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Discrete Mathematics Days 2026",
     "section": "",
-    "text": "The Ramon Llull Prize in Discrete Mathematics is an academic award for outstanding doctoral thesis in Discrete Mathematics, awarded every two years by the Spanish Red de Matemática Discreta y Algorítmica.\nThe prize winner will be announced during the Discrete Mathematics Days, where the awardee will give a prize talk.\nThe topics of the prize cover all areas related to Discrete Mathematics, including but not limited to\n\n\n\nCoding Theory and Cryptography\nCombinatorial Number Theory\nCombinatorics\nDiscrete and Computational Geometry\nDiscrete Optimization\nGraph Theory\nTheoretical Computer Science\n\n\n\n\n\nFor more details, check the Ramon Llull Prize web page.\n\n\n\n Back to top",
+    "text": "The conference will take place at the Faculty of Sciences of the University of Granada.\nThe University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.\nThe main focus of this international conference is on current topics in Discrete Mathematics, including (but not limited to):\n\nCoding Theory and Cryptography.\nCombinatorial Number Theory.\nCombinatorics.\nDiscrete and Computational Geometry.\nDiscrete Optimization.\nGraph Theory.\nTheoretical Computer Science.\n\n\nImportant dates\n\nDeadline for submitting extended abstracts: 7 April 2026 (23:59 AoE)\nCommunication of acceptance: 15 May 2026\nDeadline for submitting final versions of accepted contributions: 29 May 2026\nDeadline for early registration: 29 May 2026\n\n\n\nFunding\n\n\n\n\n\n\nRED2024-153572-T Red de Matemática Discreta y Algorítmica\n\n\n\n\n\n\n\n\nFacultad de Ciencias Universidad de Granada\n\n\n\n\n\n\n\n\nInstituto de MatemáticasUniversidad de Granada\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Ramon Llull prize"
-    ]
-  },
-  {
-    "objectID": "submissions.html",
-    "href": "submissions.html",
-    "title": "Submissions",
-    "section": "",
-    "text": "The program of the workshop consists of four one-hour invited talks plus a number of short (20 min.) contributed talks and a poster session.\nIf you wish to contribute a talk or poster, please submit an extended abstract of it via our EasyChair Submission link.\n\nSubmissions will be reviewed and accepted by the Program Committee. In order to be accepted for the conference, submissions must contain original and interesting research in the area of discrete mathematics. The results presented in a submission should not have been published (on-line or in print) in a journal or in peer-reviewed conference proceedings in 2025 or earlier. Simultaneous submission of a full version of your contribution to a journal or another conference is acceptable.\nIf too many acceptable talks are submitted, the Programme Committee may ask some of them to be presented as posters instead.\nAfter the submissions have been reviewed by the Program Committee, source LaTeX files of final versions of accepted submissions must be sent to the conference email address (dmd2026@ugr.es) before the deadline provided here.\nAbstracts of accepted talks and posters will be made available at the web of the workshop and extended abstracts will be later published by Birkäuser (Research Perspectives).\nExtended abstracts must use our template LaTeX format and are limited to a maximum of five pages including references (template available here).\nSubmissions are done through the EasyChair platform.\n\nTalks\n\n\nPosters\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Submissions"
+      "Home"
     ]
   }
 ]
