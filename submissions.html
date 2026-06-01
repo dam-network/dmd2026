@@ -72,35 +72,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -254,72 +225,72 @@ window.Quarto = {
 <p>Submissions are done through the <a href="https://easychair.org/conferences/?conf=dmd2026">EasyChair platform</a>.</p>
 <section id="talks" class="level3">
 <h3 class="anchored" data-anchor-id="talks">Talks</h3>
-<ul>
-<li>Alberto Espuny Díaz, António Girão, Bertille Granet and Gal Kronenberg.&nbsp;Sublinear degree conditions for 2-factors with k cycles in Hamiltonian graphs</li>
-<li>Alejandro Galván, Jordi Castellví, Richard Coll, Clément Requilé and Juanjo Rué.&nbsp;Enumeration of maximal K5 -minor free graphs</li>
-<li>Alexey Gordeev.&nbsp;Bollobás–Meir TSP Conjecture Holds Asymptotically</li>
-<li>Alvaro Otero Sanchez, Alvaro Otero Sanchez and Alvaro Otero Sanchez.&nbsp;Cryptoanalysis of some protocol based on semirings</li>
-<li>Amanda Montejano, Luis Montejano and Oriol Serra.&nbsp;Discrete Brunn–Minkowski inequalities</li>
-<li>Antonio Jesús Lorite Lopez, Daniel Camazon Portela and Juan Antonio Lopez Ramos.&nbsp;A Geometric Approach to Codes from Simplicial Complexes over F_2</li>
-<li>Arnau Messegué and Josep M. Miret.&nbsp;There do not exist almost Moore digraphs of odd prime diameter</li>
-<li>Cameron Strachan and Konrad Swanepoel.&nbsp;The number of occurrences of the two smallest distances</li>
-<li>Cristina Fernández-Córdoba, Sergi Sanchez Aragon and Mercè Villanueva.&nbsp;Hamming and homogeneous weight distributions of MacDonald codes over finite chain rings</li>
-<li>Cyril Banderier and Michael Drmota.&nbsp;Combinatorics and Asymptotics of Systems of Linear Catalytic Equations</li>
-<li>Danai Deligeorgaki and Krishna Menon.&nbsp;How to bounce your canon permutation</li>
-<li>Daniel Camazón Portela and Juan Antonio Lopez Ramos.&nbsp;Semigroup action based on skew polynomial evaluation with applications to Cryptography</li>
-<li>David Alcántara, Jette Gutzeit, Torben Donzelmann and Vincent Pilaud.&nbsp;Shade Polytopes</li>
-<li>Delia Garijo, Andrew Goodall and Anna De Mier.&nbsp;Graph invariants from counting homomorphisms to Cayley graphs</li>
-<li>Egor Bakaev and Amir Yehudayoff.&nbsp;A note on the affine plank conjecture</li>
-<li>Emmanuel Briand.&nbsp;Tridimensional rook placements and partial Latin rectangles through multisymmetric functions (extended abstract)</li>
-<li>Federico Castillo Castillo, Daniel Duarte, Maximiliano Leyton-Alvarez and Alvaro Liendo.&nbsp;On a computational approach to the Nash blowup problem</li>
-<li>Filip Filipi.&nbsp;Generalized snarks for 2-vertex multigraphs with semi-edges</li>
-<li>Firdavs Rakhmonov.&nbsp;<span class="math inline">\(L^p\)</span> averages of the discrete Fourier transform and applications</li>
-<li>Francisco Javier Soto Sánchez.&nbsp;Local directed structure of algebraic Cayley digraphs over finite fields</li>
-<li>Gabriela Araujo-Pardo and Leonardo Martinez-Sandoval.&nbsp;On the arc chromatic number for Galois projective planes, affine planes and Euclidean grids. The fractional version for projective planes.</li>
-<li>Gabriela Araujo-Pardo, Julián Fresán-Figueroa, Linda Lesniak and Mika Olsen.&nbsp;Rainbow-free colorings of generalized quadrangles</li>
-<li>Gabriela Araujo-Pardo, Narda Cordero-Michel, Diego Gonzalez and Carmen Hernando.&nbsp;On locating and neighbor-locating colorings of Moore cages</li>
-<li>Gergely Kiss.&nbsp;Cylinder type and <span class="math inline">\(p\)</span>-divisible sets in <span class="math inline">\(\mathbb{F}_p^3\)</span></li>
-<li>Gordian Bruns, Dheer Noal Desai, Alexander Gavrilyuk, Josias Gomez and Nathan Lindzey.&nbsp;Intersecting Families of Spanning Trees of <span class="math inline">\(K_{n,n}\)</span></li>
-<li>Gyula Károlyi.&nbsp;On set addition with restricted restrictions</li>
-<li>Hoi Ping Luk, Roman Nedela and Christopher Purcell.&nbsp;Tiling the sphere with regular polygons</li>
-<li>Hoory Shlomo and Daniel Kotlar.&nbsp;On the equal sum partition problem</li>
-<li>Ignacio García-Marco, Philippe Gimenez and Mario González-Sánchez.&nbsp;From sumsets to Castelnuvo-Mumford regularity of toric varieties</li>
-<li>Jack Allsop and Patrick Morris.&nbsp;Substructures in random Latin squares</li>
-<li>Jean Cardinal and Micha Sharir.&nbsp;Implicit representations via the polynomial method</li>
-<li>John Bamberg and Lukas Klawuhn.&nbsp;Designs of perfect matchings</li>
-<li>José Gómez Torrecillas, F. J. Lobillo and Gabriel Navarro.&nbsp;A knapsack McEliece-based public key cryptosystem</li>
-<li>Kerri Morgan and Lluis Vena.&nbsp;On the chromatic unicity of wheels: characterizing all the cases</li>
-<li>Linxuan Li.&nbsp;Fans Arising from Lattice Polytopes of Mixed Volume One and Their Generalizations</li>
-<li>María A. Hernández Cifre, Víctor Jiménez López and Mario Ruiz Amor.&nbsp;On the Minkowski-Hlawka theorem</li>
-<li>Marta Pavelka and Bruno Benedetti.&nbsp;Line-Hamiltonian Polytopes</li>
-<li>Michal Černý, Miroslav Rada and Ondřej Sokol.&nbsp;Complexity of MaxVar and cliques in a random intersection graph</li>
-<li>Monica Blanco, Francisco Criado and Francisco Santos.&nbsp;Coloopless Zonotopes and Counterexamples to the Shifted Lonely Runner Conjecture</li>
-<li>Pablo Candela, Diego González-Sánchez and Balázs Szegedy.&nbsp;An algorithmic spectral approach to higher-order Fourier analysis</li>
-<li>Patrick Morris, Eion Mulrenin, Maya Sankar and Liana Yepremyan.&nbsp;Variants of Folkman numbers</li>
-<li>Patrick Morris, Miquel Ortega and Juanjo Rue Juanjo Rue.&nbsp;Counting subsets of integers with no arithmetic progression of a given length</li>
-</ul>
+<!--
+- Alberto Espuny Díaz, António Girão, Bertille Granet and Gal Kronenberg. Sublinear degree conditions for 2-factors with k cycles in Hamiltonian graphs
+- Alejandro Galván, Jordi Castellví, Richard Coll, Clément Requilé and Juanjo Rué. Enumeration of maximal K5 -minor free graphs
+- Alexey Gordeev. Bollobás–Meir TSP Conjecture Holds Asymptotically
+- Alvaro Otero Sanchez, Alvaro Otero Sanchez and Alvaro Otero Sanchez. Cryptoanalysis of some protocol based on semirings
+- Amanda Montejano, Luis Montejano and Oriol Serra. Discrete Brunn--Minkowski inequalities
+- Antonio Jesús Lorite Lopez, Daniel Camazon Portela and Juan Antonio Lopez Ramos. A Geometric Approach to Codes from Simplicial Complexes over F_2
+- Arnau Messegué and Josep M. Miret. There do not exist almost Moore digraphs of odd prime diameter
+- Cameron Strachan and Konrad Swanepoel. The number of occurrences of the two smallest distances
+- Cristina Fernández-Córdoba, Sergi Sanchez Aragon and Mercè Villanueva. Hamming and homogeneous weight distributions of MacDonald codes over finite chain rings
+- Cyril Banderier and Michael Drmota. Combinatorics and Asymptotics of Systems of Linear Catalytic Equations
+- Danai Deligeorgaki and Krishna Menon. How to bounce your canon permutation
+- Daniel Camazón Portela and Juan Antonio Lopez Ramos. Semigroup action based on skew polynomial evaluation with applications to Cryptography
+- David Alcántara, Jette Gutzeit, Torben Donzelmann and Vincent Pilaud. Shade Polytopes
+- Delia Garijo, Andrew Goodall and Anna De Mier. Graph invariants from counting homomorphisms to Cayley graphs
+- Egor Bakaev and Amir Yehudayoff. A note on the affine plank conjecture
+- Emmanuel Briand. Tridimensional rook placements and partial Latin rectangles through multisymmetric functions (extended abstract)
+- Federico Castillo Castillo, Daniel Duarte, Maximiliano Leyton-Alvarez and Alvaro Liendo. On a computational approach to the Nash blowup problem
+- Filip Filipi. Generalized snarks for 2-vertex multigraphs with semi-edges
+- Firdavs Rakhmonov. $L^p$ averages of the discrete Fourier transform and applications
+- Francisco Javier Soto Sánchez. Local directed structure of algebraic Cayley digraphs over finite fields
+- Gabriela Araujo-Pardo and Leonardo Martinez-Sandoval. On the arc chromatic number for Galois projective planes, affine planes and Euclidean grids. The fractional version for projective planes.
+- Gabriela Araujo-Pardo, Julián Fresán-Figueroa, Linda Lesniak and Mika Olsen. Rainbow-free colorings of generalized quadrangles
+- Gabriela Araujo-Pardo, Narda Cordero-Michel, Diego Gonzalez and Carmen Hernando. On locating and neighbor-locating colorings of Moore cages
+- Gergely Kiss. Cylinder type and $p$-divisible sets in $\mathbb{F}_p^3$
+- Gordian Bruns, Dheer Noal Desai, Alexander Gavrilyuk, Josias Gomez and Nathan Lindzey. Intersecting Families of Spanning Trees of $K_{n,n}$
+- Gyula Károlyi. On set addition with restricted restrictions
+- Hoi Ping Luk, Roman Nedela and Christopher Purcell. Tiling the sphere with regular polygons
+- Hoory Shlomo and Daniel Kotlar. On the equal sum partition problem
+- Ignacio García-Marco, Philippe Gimenez and Mario González-Sánchez. From sumsets to Castelnuvo-Mumford regularity of toric varieties
+- Jack Allsop and Patrick Morris. Substructures in random Latin squares
+- Jean Cardinal and Micha Sharir. Implicit representations via the polynomial method
+- John Bamberg and Lukas Klawuhn. Designs of perfect matchings
+- José Gómez Torrecillas, F. J. Lobillo and Gabriel Navarro. A knapsack McEliece-based public key cryptosystem
+- Kerri Morgan and Lluis Vena. On the chromatic unicity of wheels: characterizing all the cases
+- Linxuan Li. Fans Arising from Lattice Polytopes of Mixed Volume One and Their Generalizations
+- María A. Hernández Cifre, Víctor Jiménez López and Mario Ruiz Amor. On the Minkowski-Hlawka theorem
+- Marta Pavelka and Bruno Benedetti. Line-Hamiltonian Polytopes
+- Michal Černý, Miroslav Rada and Ondřej Sokol. Complexity of MaxVar and cliques in a random intersection graph
+- Monica Blanco, Francisco Criado and Francisco Santos. Coloopless Zonotopes and Counterexamples to the Shifted Lonely Runner Conjecture
+- Pablo Candela, Diego González-Sánchez and Balázs Szegedy. An algorithmic spectral approach to higher-order Fourier analysis
+- Patrick Morris, Eion Mulrenin, Maya Sankar and Liana Yepremyan. Variants of Folkman numbers
+- Patrick Morris, Miquel Ortega and Juanjo Rue Juanjo Rue. Counting subsets of integers with no arithmetic progression of a given length
+-->
 </section>
 <section id="posters" class="level3">
 <h3 class="anchored" data-anchor-id="posters">Posters</h3>
-<ul>
-<li>Lidia Gordo Malagón and María A. Hernández Cifre.&nbsp;On successive minima and successive radii</li>
-<li>Luis Gustavo Da Soledade Gonzaga and Christiane Neme Campos.&nbsp;On improper colourings of apart-planar graphs</li>
-<li>Pierre Aboulker, Charbit Pierre, Coulomb Samuel, Nurse Kathryn and Picasarri-Arrieta Lucas.&nbsp;Acyclic dichromatic number of tournaments:\these are the champions</li>
-<li>R. Beltrán, J.M. Díaz-Báñez, J.M. Higes, A.J. Lozano, M.A.&nbsp;Pérez-Cutiño and I. Ventura.&nbsp;The shortest marsupial path in a simple polygon</li>
-<li>Ralihe Raul Villagran Olivas.&nbsp;Sandpile groups of strongly regular graphs and the algebraic co-rank of twin-free graphs</li>
-<li>Robin Simoens and Steven Van Overberghe.&nbsp;An algorithm to find cospectral mates</li>
-<li>Ruben Rodriguez and Umberto Martinez.&nbsp;On the structure of Polynomial Ideal Codes and Nonlinear Reed–Solomon Codes.</li>
-<li>Sandor Ernesto Tuñón Andrés, Alejandro Estrada Moreno and Juan Alberto Rodríguez Velázquez.&nbsp;The Equidistant Dimension of Corona Product Graphs</li>
-<li>Sergio Cabello, Timothy M. Chan and Panos Giannopoulos.&nbsp;Delaunay triangulations with predictions</li>
-<li>Simeon Ball and Robin Simoens.&nbsp;Mutually entangled quantum Latin squares</li>
-<li>Sylwia Antoniuk, Alberto Espuny Díaz, Kalina Petrova and Miloš Stojaković.&nbsp;Efficient construction of small subgraphs in the random graph process</li>
-<li>Tabriz Popatia, Simeon Ball and Michel Lavrauw.&nbsp;Additive codes, finite geometry, and Griesmer-type bounds</li>
-<li>Tássio Naia, Guillem Perarnau and Xavier Povill.&nbsp;Balanced subtournaments of a random tournament</li>
-<li>Thomas Lesgourgues, Michelle Delcourt and Luke Postle.&nbsp;Fractional Clique Decompositions of Dense Hypergraphs</li>
-<li>Víctor Franco Sánchez, Mercé Mora and María Luz Puertas.&nbsp;Metric representations of graphs: minimality and computational complexity</li>
-<li>Yan Alves Radtke.&nbsp;On the surjectivity of a map by Kapranov and Voevodsky in four dimensions</li>
-<li>Yandong Bai, Andrzej Grzesik, Binlong Li and Magdalena Prorok.&nbsp;Cycle lengths in graphs of given minimum degree</li>
-</ul>
+<!--
+- Lidia Gordo Malagón and María A. Hernández Cifre. On successive minima and successive radii
+- Luis Gustavo Da Soledade Gonzaga and Christiane Neme Campos. On improper colourings of apart-planar graphs
+- Pierre Aboulker, Charbit Pierre, Coulomb Samuel, Nurse Kathryn and Picasarri-Arrieta Lucas. Acyclic dichromatic number of tournaments:\\these are the champions
+- R. Beltrán, J.M. Díaz-Báñez, J.M. Higes, A.J. Lozano, M.A. Pérez-Cutiño and I. Ventura. The shortest marsupial path in a simple polygon
+- Ralihe Raul Villagran Olivas. Sandpile groups of strongly regular graphs and the algebraic co-rank of twin-free graphs
+- Robin Simoens and Steven Van Overberghe. An algorithm to find cospectral mates
+- Ruben Rodriguez and Umberto Martinez. On the structure of Polynomial Ideal Codes and Nonlinear Reed--Solomon Codes.
+- Sandor Ernesto Tuñón Andrés, Alejandro Estrada Moreno and Juan Alberto Rodríguez Velázquez. The Equidistant Dimension of Corona Product Graphs
+- Sergio Cabello, Timothy M. Chan and Panos Giannopoulos. Delaunay triangulations with predictions
+- Simeon Ball and Robin Simoens. Mutually entangled quantum Latin squares
+- Sylwia Antoniuk, Alberto Espuny Díaz, Kalina Petrova and Miloš Stojaković. Efficient construction of small subgraphs in the random graph process
+- Tabriz Popatia, Simeon Ball and Michel Lavrauw. Additive codes, finite geometry, and Griesmer-type bounds
+- Tássio Naia, Guillem Perarnau and Xavier Povill. Balanced subtournaments of a random tournament
+- Thomas Lesgourgues, Michelle Delcourt and Luke Postle. Fractional Clique Decompositions of Dense Hypergraphs
+- Víctor Franco Sánchez, Mercé Mora and María Luz Puertas. Metric representations of graphs: minimality and computational complexity
+- Yan Alves Radtke. On the surjectivity of a map by Kapranov and Voevodsky in four dimensions
+- Yandong Bai, Andrzej Grzesik, Binlong Li and Magdalena Prorok. Cycle lengths in graphs of given minimum degree
+-->
 
 
 </section>
