@@ -23,7 +23,7 @@ Submissions are done through the [EasyChair platform](https://easychair.org/conf
 
 ### Talks
 
-
+<!--
 - Alberto Espuny Díaz, António Girão, Bertille Granet and Gal Kronenberg. Sublinear degree conditions for 2-factors with k cycles in Hamiltonian graphs
 - Alejandro Galván, Jordi Castellví, Richard Coll, Clément Requilé and Juanjo Rué. Enumeration of maximal K5 -minor free graphs
 - Alexey Gordeev. Bollobás–Meir TSP Conjecture Holds Asymptotically
@@ -66,10 +66,11 @@ Submissions are done through the [EasyChair platform](https://easychair.org/conf
 - Pablo Candela, Diego González-Sánchez and Balázs Szegedy. An algorithmic spectral approach to higher-order Fourier analysis
 - Patrick Morris, Eion Mulrenin, Maya Sankar and Liana Yepremyan. Variants of Folkman numbers
 - Patrick Morris, Miquel Ortega and Juanjo Rue Juanjo Rue. Counting subsets of integers with no arithmetic progression of a given length
-
+-->
 
 ### Posters
 
+<!--
 - Lidia Gordo Malagón and María A. Hernández Cifre. On successive minima and successive radii
 - Luis Gustavo Da Soledade Gonzaga and Christiane Neme Campos. On improper colourings of apart-planar graphs
 - Pierre Aboulker, Charbit Pierre, Coulomb Samuel, Nurse Kathryn and Picasarri-Arrieta Lucas. Acyclic dichromatic number of tournaments:\\these are the champions
@@ -87,3 +88,4 @@ Submissions are done through the [EasyChair platform](https://easychair.org/conf
 - Víctor Franco Sánchez, Mercé Mora and María Luz Puertas. Metric representations of graphs: minimality and computational complexity
 - Yan Alves Radtke. On the surjectivity of a map by Kapranov and Voevodsky in four dimensions
 - Yandong Bai, Andrzej Grzesik, Binlong Li and Magdalena Prorok. Cycle lengths in graphs of given minimum degree
+-->
