@@ -73,14 +73,12 @@ Submissions are done through the [EasyChair platform](https://easychair.org/conf
 - Filip Filipi. Generalized snarks for 2-vertex multigraphs with semi-edges
 - Gabriela Araujo-Pardo and Leonardo Martinez-Sandoval. On the arc chromatic number for Galois projective planes, affine planes and Euclidean grids. The fractional version for projective planes.
 - Gabriela Araujo-Pardo, Julián Fresán-Figueroa, Linda Lesniak and Mika Olsen. Rainbow-free colorings of generalized quadrangles
-- Gabriela Araujo-Pardo, Narda Cordero-Michel, Diego Gonzalez
-and Carmen Hernando. On locating and neighbor-locating colorings of Moore cages
+- Gabriela Araujo-Pardo, Narda Cordero-Michel, Diego Gonzalez and Carmen Hernando. On locating and neighbor-locating colorings of Moore cages
 - Ignacio García-Marco, Philippe Gimenez and Mario González-Sánchez. From sumsets to Castelnuvo-Mumford regularity of toric varieties
 - Linxuan Li. Fans Arising from Lattice Polytopes of Mixed Volume One and Their Generalizations
 - Luis Gustavo Da Soledade Gonzaga and Christiane Neme Campos. On improper colourings of apart-planar graphs
 - María A. Hernández Cifre, Víctor Jiménez López and Mario Ruiz Amor. On the Minkowski-Hlawka theorem
-- Max Kölbl. Toward a lattice interpretation of the roots of Ehrhart
-polynomials
+- Max Kölbl. Toward a lattice interpretation of the roots of Ehrhart polynomials
 - Michal Černý, Miroslav Rada and Ondřej Sokol. Complexity of MaxVar and cliques in a random intersection graph
 - Robin Simoens and Steven Van Overberghe. An algorithm to find cospectral mates
 - Sandor Ernesto Tuñón Andrés, Alejandro Estrada Moreno and Juan Alberto Rodríguez Velázquez. The Equidistant Dimension of Corona Product Graphs
