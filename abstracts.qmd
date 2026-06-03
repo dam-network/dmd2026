@@ -1,0 +1,96 @@
+---
+title: "Abstracts"
+---
+
+
+```{ojs}
+//| echo: false
+
+MathJax = {
+  const MathJax = await require('https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js')
+    .catch(() => window.MathJax)
+  return MathJax
+}
+
+
+wm= window['MathJax'] = {
+  tex: {
+    inlineMath: {'[+]': [['$', '$'], ['\\(', '\\)']]}
+  },
+  output: {
+        font: 'mathjax-fira',
+        displayOverflow: 'scroll'
+  }
+};
+
+
+
+//file = FileAttachment("talks.xlsx").xlsx() 
+//data = file.sheet("talks", {range:"A1:G21",headers: true})
+
+// data = [
+//   {Name: "Alice", Affiliation: "University A", Title: "Talk on $x^2$"},
+//   {Name: "Bob", Affiliation: "University B", Title: "Talk on $y^2$"}
+// ]
+
+
+dataf = FileAttachment("abstract-dmd2026.tsv").tsv()
+
+data=dataf.sort((a, b) => a.Authors.localeCompare(b.Authors))
+
+function isEmptyOrSpaces(str){
+    return str === null || str.match(/^ *$/) !== null;
+}
+
+
+muestra = function(data){
+var code = "<div id='talks'>"
+var day=""
+data.forEach(d => {
+if (!isEmptyOrSpaces(d.abstract)) {
+    //code = code +"<p  id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></p>"
+    code = code + "<details id='"+d.id+"'><summary>"+ d.Authors+ ", <em>" + d.Title + " </em></summary><p>" + d.abstract + "</p></details>"
+}else{
+    code = code +"<p  id='"+d.id+ "' style='color:red'> &#9655; " + d.Authors+ ", <em>" + d.Title + " </em></p>"
+}
+code = code + "</div>"
+});
+
+return code
+}
+
+//html`${data.map(d => html`<p>${d.Name} ${d.Affiliation} ${d.Title}</p>`)}`
+
+//html`<p>${data[0].Title.val}</p>`
+
+// blah ="$x^2$"
+
+// ble = data[0].Title
+
+// blu = ble + " $x^2$"
+
+// example = html`${blah}`
+
+// ex = html`${blu}`
+```
+
+
+## Talks
+
+```{ojs}
+//| echo: false
+datat=dataf.filter(d => d.type == "T").sort((a, b) => a.Authors.localeCompare(b.Authors))
+
+html`${muestra(datat)}`
+```
+
+
+## Posters
+
+```{ojs}
+//| echo: false
+datap=dataf.filter(d => d.type == "P").sort((a, b) => a.Authors.localeCompare(b.Authors))
+
+html`${muestra(datap)}`
+
+```
