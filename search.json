@@ -50,23 +50,13 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Discrete Mathematics Days 2026",
+    "objectID": "plenary.html",
+    "href": "plenary.html",
+    "title": "Plenary speakers",
     "section": "",
-    "text": "The conference will take place at the Faculty of Science of the University of Granada.\nThe University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.\nThe main focus of this international conference is on current topics in Discrete Mathematics, including (but not limited to):\n\nCoding Theory and Cryptography.\nCombinatorial Number Theory.\nCombinatorics.\nDiscrete and Computational Geometry.\nDiscrete Optimization.\nGraph Theory.\nTheoretical Computer Science.\n\n\nImportant dates\n\nDeadline for submitting extended abstracts: 7 April 2026 (23:59 AoE)\nCommunication of acceptance: 15 May 2026\nDeadline for submitting final versions of accepted contributions: 29 May 2026\nDeadline for early registration: 29 May 2026\n\n\n\nFunding\n\n\n\n\n\n\nRED2024-153572-T Red de Matemática Discreta y Algorítmica\n\n\n\n\n\n\n\n\nFacultad de Ciencias Universidad de Granada\n\n\n\n\n\n\n\n\nInstituto de MatemáticasUniversidad de Granada\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Martina Juhnke (Universität Osnabrück)\nKolja Knauer (Universitat de Barcelona)\nLisa Sauermann (Universität Bonn)\n\nDimitrios Thilikos (LIRMM, Montpellier)\n\n\n\n\n Back to top",
     "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "committees.html",
-    "href": "committees.html",
-    "title": "Committees",
-    "section": "",
-    "text": "Programme committee\n\nAida Abiad, Eindhoven University of Technology (TU/e), Vrije Universiteit Brussel.\nMarie Albenque, Université Paris Cité, CNRS.\nJulia Böttcher, London School of Economics and Political Science.\nMaria Bras-Amorós, Universitat Politècnica de Catalunya.\nVida Dujmović, University of Ottawa.\nAlberto Espuny Díaz, Universitat de Barcelona.\nDelia Garijo (co-chair), Universidad de Sevilla.\nAndrew Goodall, Charles University\nGyula Károlyi, Eötvös Loránd University and Renyi Institute Budapest.\nDaniel Král’, Leipzig University, Max Planck Institute for Mathematics in the Sciences.\nAmanda Montejano, Universidad Nacional Autónoma de México.\nEran Nevo, Universidad de Valladolid, Hebrew University.\nMarc Noy, Universitat Politècnica de Catalunya.\nGuillem Perarnau (co-chair), Universitat Politècnica de Catalunya.\nGelasio Salazar, Universidad Autonoma de San Luis Potosi.\nFrancisco Santos, Universidad de Cantabria.\nAlex Scott, University of Oxford.\nJulia Wolf, University of Cambridge.\n\n\n\nOrganizing committee\n\nPedro A. García-Sánchez, University of Granada, Spain (chair)\nJavier Lobillo Borrero, University of Granada, Spain\nAureliano M. Robles-Pérez, University of Granada, Spain\nEvangelina Santos Aláez, University of Granada, Spain\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Committees"
+      "Plenary speakers"
     ]
   },
   {
@@ -80,14 +70,45 @@
     ]
   },
   {
-    "objectID": "plenary.html",
-    "href": "plenary.html",
-    "title": "Plenary speakers",
+    "objectID": "committees.html",
+    "href": "committees.html",
+    "title": "Committees",
     "section": "",
-    "text": "Martina Juhnke (Universität Osnabrück)\nKolja Knauer (Universitat de Barcelona)\nLisa Sauermann (Universität Bonn)\n\nDimitrios Thilikos (LIRMM, Montpellier)\n\n\n\n\n Back to top",
+    "text": "Programme committee\n\nAida Abiad, Eindhoven University of Technology (TU/e), Vrije Universiteit Brussel.\nMarie Albenque, Université Paris Cité, CNRS.\nJulia Böttcher, London School of Economics and Political Science.\nMaria Bras-Amorós, Universitat Politècnica de Catalunya.\nVida Dujmović, University of Ottawa.\nAlberto Espuny Díaz, Universitat de Barcelona.\nDelia Garijo (co-chair), Universidad de Sevilla.\nAndrew Goodall, Charles University\nGyula Károlyi, Eötvös Loránd University and Renyi Institute Budapest.\nDaniel Král’, Leipzig University, Max Planck Institute for Mathematics in the Sciences.\nAmanda Montejano, Universidad Nacional Autónoma de México.\nEran Nevo, Universidad de Valladolid, Hebrew University.\nMarc Noy, Universitat Politècnica de Catalunya.\nGuillem Perarnau (co-chair), Universitat Politècnica de Catalunya.\nGelasio Salazar, Universidad Autonoma de San Luis Potosi.\nFrancisco Santos, Universidad de Cantabria.\nAlex Scott, University of Oxford.\nJulia Wolf, University of Cambridge.\n\n\n\nOrganizing committee\n\nPedro A. García-Sánchez, University of Granada, Spain (chair)\nJavier Lobillo Borrero, University of Granada, Spain\nAureliano M. Robles-Pérez, University of Granada, Spain\nEvangelina Santos Aláez, University of Granada, Spain\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Plenary speakers"
+      "Committees"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Discrete Mathematics Days 2026",
+    "section": "",
+    "text": "The conference will take place at the Faculty of Science of the University of Granada.\nThe University of Granada (UGR) is a public university situated in the historical city of Granada, which lies just 35 km from the spectacular Sierra Nevada mountain range and 65 km from the tropical Mediterranean coast. The University was officially founded by the Emperor Charles V in the year 1531, and built on a centuries-old teaching tradition dating back to the madrasahs of the Nasrid dynasty of Granada. Approximately 70,000 individuals – students, researchers, lecturers, and administrative and support staff – are directly linked to the UGR, making it the fourth largest university in Spain.\nThe main focus of this international conference is on current topics in Discrete Mathematics, including (but not limited to):\n\nCoding Theory and Cryptography.\nCombinatorial Number Theory.\nCombinatorics.\nDiscrete and Computational Geometry.\nDiscrete Optimization.\nGraph Theory.\nTheoretical Computer Science.\n\n\nImportant dates\n\nDeadline for submitting extended abstracts: 7 April 2026 (23:59 AoE)\nCommunication of acceptance: 15 May 2026\nDeadline for submitting final versions of accepted contributions: 29 May 2026\nDeadline for early registration: 29 May 2026\n\n\n\nFunding\n\n\n\n\n\n\nRED2024-153572-T Red de Matemática Discreta y Algorítmica\n\n\n\n\n\n\n\n\nFacultad de Ciencias Universidad de Granada\n\n\n\n\n\n\n\n\nInstituto de MatemáticasUniversidad de Granada\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "abstracts.html",
+    "href": "abstracts.html",
+    "title": "Abstracts",
+    "section": "",
+    "text": "MathJax = {\n  const MathJax = await require('https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js')\n    .catch(() =&gt; window.MathJax)\n  return MathJax\n}\n\n\nwm= window['MathJax'] = {\n  tex: {\n    inlineMath: {'[+]': [['$', '$'], ['\\\\(', '\\\\)']]}\n  },\n  output: {\n        font: 'mathjax-fira',\n        displayOverflow: 'scroll'\n  }\n};\n\n\n\n//file = FileAttachment(\"talks.xlsx\").xlsx() \n//data = file.sheet(\"talks\", {range:\"A1:G21\",headers: true})\n\n// data = [\n//   {Name: \"Alice\", Affiliation: \"University A\", Title: \"Talk on $x^2$\"},\n//   {Name: \"Bob\", Affiliation: \"University B\", Title: \"Talk on $y^2$\"}\n// ]\n\n\ndataf = FileAttachment(\"abstract-dmd2026.tsv\").tsv()\n\ndata=dataf.sort((a, b) =&gt; a.Authors.localeCompare(b.Authors))\n\nfunction isEmptyOrSpaces(str){\n    return str === null || str.match(/^ *$/) !== null;\n}\n\n\nmuestra = function(data){\nvar code = \"&lt;div id='talks'&gt;\"\nvar day=\"\"\ndata.forEach(d =&gt; {\nif (!isEmptyOrSpaces(d.abstract)) {\n    //code = code +\"&lt;p  id='\"+d.id+ \"'&gt;\" + d.Authors+ \", &lt;em&gt;\" + d.Title + \" &lt;/em&gt;&lt;/p&gt;\"\n    code = code + \"&lt;details id='\"+d.id+\"'&gt;&lt;summary&gt;\"+ d.Authors+ \", &lt;em&gt;\" + d.Title + \" &lt;/em&gt;&lt;/summary&gt;&lt;p&gt;\" + d.abstract + \"&lt;/p&gt;&lt;/details&gt;\"\n}else{\n    code = code +\"&lt;p  id='\"+d.id+ \"' style='color:red'&gt; &#9655; \" + d.Authors+ \", &lt;em&gt;\" + d.Title + \" &lt;/em&gt;&lt;/p&gt;\"\n}\ncode = code + \"&lt;/div&gt;\"\n});\n\nreturn code\n}"
+  },
+  {
+    "objectID": "abstracts.html#talks",
+    "href": "abstracts.html#talks",
+    "title": "Abstracts",
+    "section": "Talks",
+    "text": "Talks\n\ndatat=dataf.filter(d =&gt; d.type == \"T\").sort((a, b) =&gt; a.Authors.localeCompare(b.Authors))\n\nhtml`${muestra(datat)}`"
+  },
+  {
+    "objectID": "abstracts.html#posters",
+    "href": "abstracts.html#posters",
+    "title": "Abstracts",
+    "section": "Posters",
+    "text": "Posters\n\ndatap=dataf.filter(d =&gt; d.type == \"P\").sort((a, b) =&gt; a.Authors.localeCompare(b.Authors))\n\nhtml`${muestra(datap)}`"
   },
   {
     "objectID": "llull.html",
