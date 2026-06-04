@@ -75,6 +75,16 @@ return code
 ```
 
 
+## Plenary Talks
+
+```{ojs}
+//| echo: false
+datai=dataf.filter(d => d.type == "I").sort((a, b) => a.Authors.localeCompare(b.Authors))
+
+html`${muestra(datai)}`
+```
+
+
 ## Talks
 
 ```{ojs}
