@@ -51,7 +51,7 @@ if (!isEmptyOrSpaces(d.abstract)) {
     //code = code +"<p  id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></p>"
     code = code + "<details id='"+d.id+"'><summary>"+ d.Authors+ ", <em>" + d.Title + " </em></summary><p>" + d.abstract + "</p></details>"
 }else{
-    code = code +"<p  id='"+d.id+ "' style='color:red'> &#9655; " + d.Authors+ ", <em>" + d.Title + " </em></p>"
+    code = code +"<p  id='"+d.id+ "'> &#9655; " + d.Authors+ ", <em>" + d.Title + " </em></p>"
 }
 code = code + "</div>"
 });
