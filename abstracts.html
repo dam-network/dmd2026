@@ -227,6 +227,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#programme" id="toc-programme" class="nav-link active" data-scroll-target="#programme">Programme</a>
   <ul class="collapse">
   <li><a href="#monday-29-june-2026" id="toc-monday-29-june-2026" class="nav-link" data-scroll-target="#monday-29-june-2026">Monday, 29 June 2026</a></li>
+  <li><a href="#tuesday-30-june-2026" id="toc-tuesday-30-june-2026" class="nav-link" data-scroll-target="#tuesday-30-june-2026">Tuesday, 30 June 2026</a></li>
+  <li><a href="#wednesday-1-july-2026" id="toc-wednesday-1-july-2026" class="nav-link" data-scroll-target="#wednesday-1-july-2026">Wednesday, 1 July 2026</a></li>
   </ul></li>
   <li><a href="#plenary-talks" id="toc-plenary-talks" class="nav-link" data-scroll-target="#plenary-talks">Plenary Talks</a></li>
   <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
@@ -264,213 +266,421 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-btxf{background-color:#f9f9f9;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="19" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>MathJax <span class="op">=</span> {</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> MathJax <span class="op">=</span> <span class="cf">await</span> <span class="pp">require</span>(<span class="st">'https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js'</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">catch</span>(() <span class="kw">=&gt;</span> <span class="bu">window</span><span class="op">.</span><span class="at">MathJax</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> MathJax</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="20" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 19;"><span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>MathJax <span class="op">=</span> {</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> MathJax <span class="op">=</span> <span class="cf">await</span> <span class="pp">require</span>(<span class="st">'https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js'</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">catch</span>(() <span class="kw">=&gt;</span> <span class="bu">window</span><span class="op">.</span><span class="at">MathJax</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> MathJax</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>wm<span class="op">=</span> <span class="bu">window</span>[<span class="st">'MathJax'</span>] <span class="op">=</span> {</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="dt">tex</span><span class="op">:</span> {</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inlineMath</span><span class="op">:</span> {<span class="st">'[+]'</span><span class="op">:</span> [[<span class="st">'$'</span><span class="op">,</span> <span class="st">'$'</span>]<span class="op">,</span> [<span class="st">'</span><span class="sc">\\</span><span class="st">('</span><span class="op">,</span> <span class="st">'</span><span class="sc">\\</span><span class="st">)'</span>]]}</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="dt">output</span><span class="op">:</span> {</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="dt">font</span><span class="op">:</span> <span class="st">'mathjax-fira'</span><span class="op">,</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="dt">displayOverflow</span><span class="op">:</span> <span class="st">'scroll'</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>wm<span class="op">=</span> <span class="bu">window</span>[<span class="st">'MathJax'</span>] <span class="op">=</span> {</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">tex</span><span class="op">:</span> {</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inlineMath</span><span class="op">:</span> {<span class="st">'[+]'</span><span class="op">:</span> [[<span class="st">'$'</span><span class="op">,</span> <span class="st">'$'</span>]<span class="op">,</span> [<span class="st">'</span><span class="sc">\\</span><span class="st">('</span><span class="op">,</span> <span class="st">'</span><span class="sc">\\</span><span class="st">)'</span>]]}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="dt">output</span><span class="op">:</span> {</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="dt">font</span><span class="op">:</span> <span class="st">'mathjax-fira'</span><span class="op">,</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="dt">displayOverflow</span><span class="op">:</span> <span class="st">'scroll'</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">//file = FileAttachment("talks.xlsx").xlsx() </span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">//data = file.sheet("talks", {range:"A1:G21",headers: true})</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">// data = [</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">//   {Name: "Alice", Affiliation: "University A", Title: "Talk on $x^2$"},</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">//   {Name: "Bob", Affiliation: "University B", Title: "Talk on $y^2$"}</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">// ]</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">//file = FileAttachment("talks.xlsx").xlsx() </span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">//data = file.sheet("talks", {range:"A1:G21",headers: true})</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">// data = [</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co">//   {Name: "Alice", Affiliation: "University A", Title: "Talk on $x^2$"},</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">//   {Name: "Bob", Affiliation: "University B", Title: "Talk on $y^2$"}</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">// ]</span></span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>dataf <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"abstract-dmd2026.tsv"</span>)<span class="op">.</span><span class="fu">tsv</span>()</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>data<span class="op">=</span>dataf<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">isEmptyOrSpaces</span>(str){</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> str <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> str<span class="op">.</span><span class="fu">match</span>(<span class="ss">/</span><span class="sc">^</span><span class="ss"> </span><span class="sc">*$</span><span class="ss">/</span>) <span class="op">!==</span> <span class="kw">null</span><span class="op">;</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>dataf <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"abstract-dmd2026.tsv"</span>)<span class="op">.</span><span class="fu">tsv</span>()</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>data<span class="op">=</span>dataf<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">isEmptyOrSpaces</span>(str){</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> str <span class="op">===</span> <span class="kw">null</span> <span class="op">||</span> str<span class="op">.</span><span class="fu">match</span>(<span class="ss">/</span><span class="sc">^</span><span class="ss"> </span><span class="sc">*$</span><span class="ss">/</span>) <span class="op">!==</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>muestra <span class="op">=</span> <span class="kw">function</span>(data){</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> code <span class="op">=</span> <span class="st">"&lt;div id='talks'&gt;"</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> day<span class="op">=</span><span class="st">""</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>data<span class="op">.</span><span class="fu">forEach</span>(d <span class="kw">=&gt;</span> {</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="op">!</span><span class="fu">isEmptyOrSpaces</span>(d<span class="op">.</span><span class="at">abstract</span>)) {</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    <span class="co">//code = code +"&lt;p  id='"+d.id+ "'&gt;" + d.Authors+ ", &lt;em&gt;" + d.Title + " &lt;/em&gt;&lt;/p&gt;"</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;details id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span><span class="st">"'&gt;&lt;summary&gt;"</span><span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;&lt;/summary&gt;&lt;p&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">abstract</span> <span class="op">+</span> <span class="st">"&lt;/p&gt;&lt;/details&gt;"</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>}<span class="cf">else</span>{</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span><span class="st">"&lt;p  id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span> <span class="st">"'&gt; &amp;#9655; "</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;&lt;/p&gt;"</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;/div&gt;"</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> code</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">//html`${data.map(d =&gt; html`&lt;p&gt;${d.Name} ${d.Affiliation} ${d.Title}&lt;/p&gt;`)}`</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="co">//html`&lt;p&gt;${data[0].Title.val}&lt;/p&gt;`</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">// blah ="$x^2$"</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">// ble = data[0].Title</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co">// blu = ble + " $x^2$"</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="co">// example = html`${blah}`</span></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="co">// ex = html`${blu}`</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>muestra <span class="op">=</span> <span class="kw">function</span>(data){</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> code <span class="op">=</span> <span class="st">"&lt;div id='talks'&gt;"</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> day<span class="op">=</span><span class="st">""</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>data<span class="op">.</span><span class="fu">forEach</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="op">!</span><span class="fu">isEmptyOrSpaces</span>(d<span class="op">.</span><span class="at">abstract</span>)) {</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    <span class="co">//code = code +"&lt;p  id='"+d.id+ "'&gt;" + d.Authors+ ", &lt;em&gt;" + d.Title + " &lt;/em&gt;&lt;/p&gt;"</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;details id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span><span class="st">"'&gt;&lt;summary&gt;"</span><span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;&lt;/summary&gt;&lt;p&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">abstract</span> <span class="op">+</span> <span class="st">"&lt;/p&gt;&lt;/details&gt;"</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>}<span class="cf">else</span>{</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span><span class="st">"&lt;p  id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span> <span class="st">"'&gt; &amp;#9655; "</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;&lt;/p&gt;"</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;/div&gt;"</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> code</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>muestra_lista <span class="op">=</span> <span class="kw">function</span>(data){</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> code <span class="op">=</span> <span class="st">"&lt;div id='talks'&gt;&lt;ol&gt;"</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> day<span class="op">=</span><span class="st">""</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>data<span class="op">.</span><span class="fu">forEach</span>(d <span class="kw">=&gt;</span> {</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="op">!</span><span class="fu">isEmptyOrSpaces</span>(d<span class="op">.</span><span class="at">abstract</span>)) {</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>    <span class="co">//code = code +"&lt;p  id='"+d.id+ "'&gt;" + d.Authors+ ", &lt;em&gt;" + d.Title + " &lt;/em&gt;&lt;/p&gt;"</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;li id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span><span class="st">"'&gt;"</span><span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;</span><span class="sc">\n</span><span class="st">&lt;p&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">abstract</span> <span class="op">+</span> <span class="st">"&lt;/p&gt;&lt;/li&gt;</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>}<span class="cf">else</span>{</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    code <span class="op">=</span> code <span class="op">+</span><span class="st">"&lt;li id='"</span><span class="op">+</span>d<span class="op">.</span><span class="at">id</span><span class="op">+</span> <span class="st">"'&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Authors</span><span class="op">+</span> <span class="st">", &lt;em&gt;"</span> <span class="op">+</span> d<span class="op">.</span><span class="at">Title</span> <span class="op">+</span> <span class="st">" &lt;/em&gt;&lt;/li&gt;"</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>code <span class="op">=</span> code <span class="op">+</span> <span class="st">"&lt;/ol&gt;&lt;/div&gt;"</span></span>
 <span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>listaid <span class="op">=</span> dataf<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span>)</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="co">//listaid</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> code</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>cambia <span class="op">=</span> <span class="kw">function</span>(){</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> monday <span class="op">=</span> <span class="vs">`</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;table class="tg"&gt;</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;colgroup&gt;</span></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 15%;"&gt;</span></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/colgroup&gt;</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">//html`${data.map(d =&gt; html`&lt;p&gt;${d.Name} ${d.Affiliation} ${d.Title}&lt;/p&gt;`)}`</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="co">//html`&lt;p&gt;${data[0].Title.val}&lt;/p&gt;`</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co">// blah ="$x^2$"</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="co">// ble = data[0].Title</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="co">// blu = ble + " $x^2$"</span></span>
 <span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;thead&gt;</span></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;29/06/2026&lt;/th&gt;</span></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;Room F1&lt;/th&gt;</span></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;Room F2&lt;/th&gt;</span></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;&lt;/thead&gt;</span></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;tbody&gt;</span></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;08:15 - 08:55&lt;/td&gt;</span></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Registration: Hall Faculty of Science&lt;/td&gt;</span></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;09:00 - 09:15&lt;/td&gt;</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Opening&lt;/td&gt;</span></span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;09:15 - 10:15&lt;/td&gt;</span></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Plenary Talk: {91}&lt;/td&gt;</span></span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;10:15 - 10:45&lt;/td&gt;</span></span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Coffee break - Hall&lt;/td&gt;</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Session 1.A&lt;/td&gt;</span></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Session 1.B&lt;/td&gt;</span></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;10:45 - 11:05&lt;/td&gt;</span></span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{50}&lt;/td&gt;</span></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{10}&lt;/td&gt;</span></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;11:05 - 11:25&lt;/td&gt;</span></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{24}&lt;/td&gt;</span></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{45}&lt;/td&gt;</span></span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;11:25 - 11:45&lt;/td&gt;</span></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{62}&lt;/td&gt;</span></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{68}&lt;/td&gt;</span></span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;11:45 - 12:00&lt;/td&gt;</span></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Short break&lt;/td&gt;</span></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Session 2.A&lt;/td&gt;</span></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Session 2.B&lt;/td&gt;</span></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;12:00 - 12:20&lt;/td&gt;</span></span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{15}&lt;/td&gt;</span></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{20}&lt;/td&gt;</span></span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;12:20 - 12:40&lt;/td&gt;</span></span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{25}&lt;/td&gt;</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{22}&lt;/td&gt;</span></span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;12:40 - 13:00&lt;/td&gt;</span></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{41}&lt;/td&gt;</span></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{70}&lt;/td&gt;</span></span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;13:00 - 15:00&lt;/td&gt;</span></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Lunch (self-arranged)&lt;/td&gt;</span></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;15:00 - 16:00&lt;/td&gt;</span></span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Plenary talk: {92}&lt;/td&gt;</span></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;16:00 - 16:30&lt;/td&gt;</span></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Coffee break - Hall&lt;/td&gt;</span></span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Session 3.A&lt;/td&gt;</span></span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Session 3.B&lt;/td&gt;</span></span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;16:30 - 16:50&lt;/td&gt;</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{32}&lt;/td&gt;</span></span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{12}&lt;/td&gt;</span></span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;16:50 - 17:10&lt;/td&gt;</span></span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{38}&lt;/td&gt;</span></span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{57}&lt;/td&gt;</span></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;17:10 - 18:00&lt;/td&gt;</span></span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Poster session - Hall&lt;/td&gt;</span></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;18:00 - 18:30&lt;/td&gt;</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Business meeting&lt;/td&gt;</span></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
-<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/tbody&gt;&lt;/table&gt;</span></span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>listaid<span class="op">.</span><span class="fu">forEach</span>(id <span class="kw">=&gt;</span> {</span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>  <span class="co">//const did = dataf.filter(d =&gt; d.id == id)</span></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>  <span class="co">// monday = monday.replace("{"+id+"}", muestra(did))//`&lt;a href="#${id}"&gt;${did.Title}&lt;/a&gt;`)</span></span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> did <span class="op">=</span> dataf<span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span> <span class="op">==</span> id)</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>  monday <span class="op">=</span> monday<span class="op">.</span><span class="fu">replace</span>(<span class="st">"{"</span><span class="op">+</span>id<span class="op">+</span><span class="st">"}"</span><span class="op">,</span> <span class="vs">`</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Authors</span><span class="sc">}</span><span class="vs">, &lt;a href="#</span><span class="sc">${</span>id<span class="sc">}</span><span class="vs">"&gt;&lt;em&gt;</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Title</span><span class="sc">}</span><span class="vs">&lt;/em&gt;&lt;/a&gt;`</span>)</span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> monday</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">// example = html`${blah}`</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="co">// ex = html`${blu}`</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>listaid <span class="op">=</span> dataf<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span>)</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">//listaid</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="co">// Use the following code to generate the table structure for the schedule. You can replace the content of the cells with the appropriate information for each session and talk.</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="co">// &lt;colgroup&gt;</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="co">//    &lt;col span="1" style="width: 15%;"&gt;</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="co">//    &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co">//    &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="co">// &lt;/colgroup&gt;</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>monday <span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;table class="tg"&gt;</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;colgroup&gt;</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 15%;"&gt;</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/colgroup&gt;</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;thead&gt;</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;29/06/2026&lt;/th&gt;</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;Room F1&lt;/th&gt;</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0pky"&gt;Room F2&lt;/th&gt;</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;&lt;/thead&gt;</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;tbody&gt;</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;08:15 - 08:55&lt;/td&gt;</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Registration: Hall Faculty of Science&lt;/td&gt;</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;09:00 - 09:15&lt;/td&gt;</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Opening&lt;/td&gt;</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;09:15 - 10:15&lt;/td&gt;</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Plenary Talk: {91}&lt;/td&gt;</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;10:15 - 10:45&lt;/td&gt;</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Coffee break - Hall&lt;/td&gt;</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;strong&gt;Session 1.A&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;strong&gt;Session 1.B&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;10:45 - 11:05&lt;/td&gt;</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{50}&lt;/td&gt;</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{10}&lt;/td&gt;</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;11:05 - 11:25&lt;/td&gt;</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{24}&lt;/td&gt;</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{45}&lt;/td&gt;</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;11:25 - 11:45&lt;/td&gt;</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{62}&lt;/td&gt;</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{68}&lt;/td&gt;</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;11:45 - 12:00&lt;/td&gt;</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Short break&lt;/td&gt;</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;strong&gt;Session 2.A&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;strong&gt;Session 2.B&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;12:00 - 12:20&lt;/td&gt;</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{15}&lt;/td&gt;</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{20}&lt;/td&gt;</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;12:20 - 12:40&lt;/td&gt;</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{25}&lt;/td&gt;</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{22}&lt;/td&gt;</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;12:40 - 13:00&lt;/td&gt;</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{41}&lt;/td&gt;</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{70}&lt;/td&gt;</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;13:00 - 15:00&lt;/td&gt;</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Lunch (self-arranged)&lt;/td&gt;</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;15:00 - 16:00&lt;/td&gt;</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Plenary talk: {92}&lt;/td&gt;</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;16:00 - 16:30&lt;/td&gt;</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Coffee break - Hall&lt;/td&gt;</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;strong&gt;Session 3.A&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;strong&gt;Session 3.B&lt;/strong&gt;&lt;/td&gt;</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;16:30 - 16:50&lt;/td&gt;</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{32}&lt;/td&gt;</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;{12}&lt;/td&gt;</span></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;16:50 - 17:10&lt;/td&gt;</span></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{38}&lt;/td&gt;</span></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;{57}&lt;/td&gt;</span></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;17:10 - 18:00&lt;/td&gt;</span></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;Poster session - Hall&lt;/td&gt;</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0pky"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;18:00 - 18:30&lt;/td&gt;</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;Business meeting&lt;/td&gt;</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-btxf"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/tbody&gt;&lt;/table&gt;</span></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>tuesday<span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;table class="tg"&gt;</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;colgroup&gt;</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 15%;"&gt;</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/colgroup&gt;</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;thead&gt;</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;30/06/2026&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Room F1&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Room F2&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;&lt;/thead&gt;</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;tbody&gt;</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;09:15 - 10:15&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;Plenary Talk: {94}&lt;/td&gt;</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;10:15 - 10:45&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;Coffee break - Hall&lt;/td&gt;</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 4.A&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 4.B&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;10:45 - 11:05&lt;/td&gt;</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{8}&lt;/td&gt;</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{27}&lt;/td&gt;</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;11:05 - 11:25&lt;/td&gt;</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{55}&lt;/td&gt;</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{29}&lt;/td&gt;</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;11:25 - 11: 45&lt;/td&gt;</span></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{59}&lt;/td&gt;</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{49}&lt;/td&gt;</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;11:45 - 12:00&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Short break&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 5.A&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 5.B&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;12:00 - 12:20&lt;/td&gt;</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{31}&lt;/td&gt;</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{35}&lt;/td&gt;</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;12:20 - 12:40&lt;/td&gt;</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{63}&lt;/td&gt;</span></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{60}&lt;/td&gt;</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;12:40 - 13:00&lt;/td&gt;</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{48}&lt;/td&gt;</span></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{44}&lt;/td&gt;</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;13:00 - 13:10&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Group photo&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;13:10 - 15:00&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;Lunch (self-arranged)&lt;/td&gt;</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;15:00 - 16:00&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Ramon Lull prize talk&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;16:00 - 16:30&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Coffee break&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 6.A&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 6.B&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;16:30 - 16:50&lt;/td&gt;</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{52}&lt;/td&gt;</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{2}&lt;/td&gt;</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;16:50 - 17:10&lt;/td&gt;</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{56}&lt;/td&gt;</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{65}&lt;/td&gt;</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;18:30 - 19:30&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Excursion: Math walk&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;20:30 - 22:30&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Gala dinner&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/tbody&gt;&lt;/table&gt;</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>wednesday<span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;table class="tg"&gt;</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;colgroup&gt;</span></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 15%;"&gt;</span></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a><span class="vs">       &lt;col span="1" style="width: 40%;"&gt;</span></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/colgroup&gt;</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;thead&gt;</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;01/07/2026&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Room F1&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;th class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Room F2&lt;/span&gt;&lt;/th&gt;</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;&lt;/thead&gt;</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;tbody&gt;</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;09:30 - 10:30&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;Plenary Talk: {93}&lt;/td&gt;</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;10:30 - 11:00&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Coffee break&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 7.A&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 7.B&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;11:00 - 11:20&lt;/td&gt;</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{23}&lt;/td&gt;</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{13}&lt;/td&gt;</span></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;11:20 - 11:40&lt;/td&gt;</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{40}&lt;/td&gt;</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{17}&lt;/td&gt;</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;11:40 - 12:00&lt;/td&gt;</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{71}&lt;/td&gt;</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{64}&lt;/td&gt;</span></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;11:00 - 12:20&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Short break&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;/td&gt;</span></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 8.A&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:bold"&gt;Session 8.B&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;12:20 - 12:40&lt;/td&gt;</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{36}&lt;/td&gt;</span></span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{14}&lt;/td&gt;</span></span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;12:40 - 13:00&lt;/td&gt;</span></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{61}&lt;/td&gt;</span></span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;{28}&lt;/td&gt;</span></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;tr&gt;</span></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax"&gt;&lt;span style="font-weight:normal"&gt;13:00 - 13:10&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;td class="tg-0lax" colspan="2"&gt;&lt;span style="font-weight:normal"&gt;Farewell&lt;/span&gt;&lt;/td&gt;</span></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/tr&gt;</span></span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/tbody&gt;&lt;/table&gt;</span></span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>cambia <span class="op">=</span> <span class="kw">function</span>(day){</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> daynew <span class="op">=</span> day</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>  listaid<span class="op">.</span><span class="fu">forEach</span>(id <span class="kw">=&gt;</span> {</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>  <span class="co">//const did = dataf.filter(d =&gt; d.id == id)</span></span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>  <span class="co">// monday = monday.replace("{"+id+"}", muestra(did))//`&lt;a href="#${id}"&gt;${did.Title}&lt;/a&gt;`)</span></span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> did <span class="op">=</span> dataf<span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span> <span class="op">==</span> id)</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="fu">isEmptyOrSpaces</span>(did<span class="op">.</span><span class="at">abstract</span>)){</span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>    daynew <span class="op">=</span> daynew<span class="op">.</span><span class="fu">replace</span>(<span class="st">"{"</span><span class="op">+</span>id<span class="op">+</span><span class="st">"}"</span><span class="op">,</span> <span class="vs">`</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Authors</span><span class="sc">}</span><span class="vs">, &lt;a href="#</span><span class="sc">${</span>id<span class="sc">}</span><span class="vs">"&gt;&lt;em&gt;</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Title</span><span class="sc">}</span><span class="vs">&lt;/em&gt;&lt;/a&gt;`</span>)</span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>  }<span class="cf">else</span>{</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>    daynew <span class="op">=</span> daynew<span class="op">.</span><span class="fu">replace</span>(<span class="st">"{"</span><span class="op">+</span>id<span class="op">+</span><span class="st">"}"</span><span class="op">,</span> <span class="vs">`</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Authors</span><span class="sc">}</span><span class="vs">, &lt;em&gt;</span><span class="sc">${</span>did<span class="op">.</span><span class="at">Title</span><span class="sc">}</span><span class="vs">&lt;/em&gt;`</span>)</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> daynew</span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -527,15 +737,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-11" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-12" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
 </div>
 <section id="programme" class="level2">
 <h2 class="anchored" data-anchor-id="programme">Programme</h2>
 <section id="monday-29-june-2026" class="level3">
 <h3 class="anchored" data-anchor-id="monday-29-june-2026">Monday, 29 June 2026</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="234" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 233;"><span id="cb2-234"><a href="#cb2-234" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">cambia</span>()<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="442" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 441;"><span id="cb2-442"><a href="#cb2-442" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">cambia</span>(monday)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="tuesday-30-june-2026" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-30-june-2026">Tuesday, 30 June 2026</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="449" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 448;"><span id="cb3-449"><a href="#cb3-449" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">cambia</span>(tuesday)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="wednesday-1-july-2026" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-1-july-2026">Wednesday, 1 July 2026</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="457" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 456;"><span id="cb4-457"><a href="#cb4-457" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">cambia</span>(wednesday)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
 
 </div>
 </div>
@@ -545,53 +805,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="plenary-talks" class="level2">
 <h2 class="anchored" data-anchor-id="plenary-talks">Plenary Talks</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="242" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 241;"><span id="cb3-242"><a href="#cb3-242" aria-hidden="true" tabindex="-1"></a>datai<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"I"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
-<span id="cb3-243"><a href="#cb3-243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-244"><a href="#cb3-244" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra</span>(datai)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-3-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-3-2" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="talks" class="level2">
-<h2 class="anchored" data-anchor-id="talks">Talks</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="252" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 251;"><span id="cb4-252"><a href="#cb4-252" aria-hidden="true" tabindex="-1"></a>datat<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"T"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
-<span id="cb4-253"><a href="#cb4-253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-254"><a href="#cb4-254" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra</span>(datat)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-4-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-4-2" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="posters" class="level2">
-<h2 class="anchored" data-anchor-id="posters">Posters</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="262" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 261;"><span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a>datap<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"P"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
-<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra</span>(datap)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="466" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 465;"><span id="cb5-466"><a href="#cb5-466" aria-hidden="true" tabindex="-1"></a>datai<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"I"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
+<span id="cb5-467"><a href="#cb5-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-468"><a href="#cb5-468" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra_lista</span>(datai)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-5-1" data-nodetype="declaration">
@@ -607,13 +823,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</section>
+<section id="talks" class="level2">
+<h2 class="anchored" data-anchor-id="talks">Talks</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="478" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 477;"><span id="cb6-478"><a href="#cb6-478" aria-hidden="true" tabindex="-1"></a>datat<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"T"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
+<span id="cb6-479"><a href="#cb6-479" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-480"><a href="#cb6-480" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra_lista</span>(datat)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="posters" class="level2">
+<h2 class="anchored" data-anchor-id="posters">Posters</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="488" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 487;"><span id="cb7-488"><a href="#cb7-488" aria-hidden="true" tabindex="-1"></a>datap<span class="op">=</span>dataf<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span> <span class="op">==</span> <span class="st">"P"</span>)<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a<span class="op">.</span><span class="at">Authors</span><span class="op">.</span><span class="fu">localeCompare</span>(b<span class="op">.</span><span class="at">Authors</span>))</span>
+<span id="cb7-489"><a href="#cb7-489" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-490"><a href="#cb7-490" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">muestra_lista</span>(datap)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-7-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuTWF0aEpheCA9IHtcbiAgY29uc3QgTWF0aEpheCA9IGF3YWl0IHJlcXVpcmUoJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbWF0aGpheEA0L3RleC1zdmcuanMnKVxuICAgIC5jYXRjaCgoKSA9PiB3aW5kb3cuTWF0aEpheClcbiAgcmV0dXJuIE1hdGhKYXhcbn1cblxuXG53bT0gd2luZG93WydNYXRoSmF4J10gPSB7XG4gIHRleDoge1xuICAgIGlubGluZU1hdGg6IHsnWytdJzogW1snJCcsICckJ10sIFsnXFxcXCgnLCAnXFxcXCknXV19XG4gIH0sXG4gIG91dHB1dDoge1xuICAgICAgICBmb250OiAnbWF0aGpheC1maXJhJyxcbiAgICAgICAgZGlzcGxheU92ZXJmbG93OiAnc2Nyb2xsJ1xuICB9XG59O1xuXG5cblxuLy9maWxlID0gRmlsZUF0dGFjaG1lbnQoXCJ0YWxrcy54bHN4XCIpLnhsc3goKSBcbi8vZGF0YSA9IGZpbGUuc2hlZXQoXCJ0YWxrc1wiLCB7cmFuZ2U6XCJBMTpHMjFcIixoZWFkZXJzOiB0cnVlfSlcblxuLy8gZGF0YSA9IFtcbi8vICAge05hbWU6IFwiQWxpY2VcIiwgQWZmaWxpYXRpb246IFwiVW5pdmVyc2l0eSBBXCIsIFRpdGxlOiBcIlRhbGsgb24gJHheMiRcIn0sXG4vLyAgIHtOYW1lOiBcIkJvYlwiLCBBZmZpbGlhdGlvbjogXCJVbml2ZXJzaXR5IEJcIiwgVGl0bGU6IFwiVGFsayBvbiAkeV4yJFwifVxuLy8gXVxuXG5cbmRhdGFmID0gRmlsZUF0dGFjaG1lbnQoXCJhYnN0cmFjdC1kbWQyMDI2LnRzdlwiKS50c3YoKVxuXG5kYXRhPWRhdGFmLnNvcnQoKGEsIGIpID0+IGEuQXV0aG9ycy5sb2NhbGVDb21wYXJlKGIuQXV0aG9ycykpXG5cbmZ1bmN0aW9uIGlzRW1wdHlPclNwYWNlcyhzdHIpe1xuICAgIHJldHVybiBzdHIgPT09IG51bGwgfHwgc3RyLm1hdGNoKC9eICokLykgIT09IG51bGw7XG59XG5cblxubXVlc3RyYSA9IGZ1bmN0aW9uKGRhdGEpe1xudmFyIGNvZGUgPSBcIjxkaXYgaWQ9J3RhbGtzJz5cIlxudmFyIGRheT1cIlwiXG5kYXRhLmZvckVhY2goZCA9PiB7XG5pZiAoIWlzRW1wdHlPclNwYWNlcyhkLmFic3RyYWN0KSkge1xuICAgIC8vY29kZSA9IGNvZGUgK1wiPHAgIGlkPSdcIitkLmlkKyBcIic+XCIgKyBkLkF1dGhvcnMrIFwiLCA8ZW0+XCIgKyBkLlRpdGxlICsgXCIgPC9lbT48L3A+XCJcbiAgICBjb2RlID0gY29kZSArIFwiPGRldGFpbHMgaWQ9J1wiK2QuaWQrXCInPjxzdW1tYXJ5PlwiKyBkLkF1dGhvcnMrIFwiLCA8ZW0+XCIgKyBkLlRpdGxlICsgXCIgPC9lbT48L3N1bW1hcnk+PHA+XCIgKyBkLmFic3RyYWN0ICsgXCI8L3A+PC9kZXRhaWxzPlwiXG59ZWxzZXtcbiAgICBjb2RlID0gY29kZSArXCI8cCAgaWQ9J1wiK2QuaWQrIFwiJz4gJiM5NjU1OyBcIiArIGQuQXV0aG9ycysgXCIsIDxlbT5cIiArIGQuVGl0bGUgKyBcIiA8L2VtPjwvcD5cIlxufVxuY29kZSA9IGNvZGUgKyBcIjwvZGl2PlwiXG59KTtcblxucmV0dXJuIGNvZGVcbn1cblxuLy9odG1sYCR7ZGF0YS5tYXAoZCA9PiBodG1sYDxwPiR7ZC5OYW1lfSAke2QuQWZmaWxpYXRpb259ICR7ZC5UaXRsZX08L3A+YCl9YFxuXG4vL2h0bWxgPHA+JHtkYXRhWzBdLlRpdGxlLnZhbH08L3A+YFxuXG4vLyBibGFoID1cIiR4XjIkXCJcblxuLy8gYmxlID0gZGF0YVswXS5UaXRsZVxuXG4vLyBibHUgPSBibGUgKyBcIiAkeF4yJFwiXG5cbi8vIGV4YW1wbGUgPSBodG1sYCR7YmxhaH1gXG5cbi8vIGV4ID0gaHRtbGAke2JsdX1gXG5cbmxpc3RhaWQgPSBkYXRhZi5tYXAoZCA9PiBkLmlkKVxuXG4vL2xpc3RhaWRcblxuXG5jYW1iaWEgPSBmdW5jdGlvbigpe1xudmFyIG1vbmRheSA9IGBcbjx0YWJsZSBjbGFzcz1cInRnXCI+XG4gICAgPGNvbGdyb3VwPlxuICAgICAgIDxjb2wgc3Bhbj1cIjFcIiBzdHlsZT1cIndpZHRoOiAxNSU7XCI+XG4gICAgICAgPGNvbCBzcGFuPVwiMVwiIHN0eWxlPVwid2lkdGg6IDQwJTtcIj5cbiAgICAgICA8Y29sIHNwYW49XCIxXCIgc3R5bGU9XCJ3aWR0aDogNDAlO1wiPlxuICAgIDwvY29sZ3JvdXA+XG5cbjx0aGVhZD5cbiAgPHRyPlxuICAgIDx0aCBjbGFzcz1cInRnLTBwa3lcIj4yOS8wNi8yMDI2PC90aD5cbiAgICA8dGggY2xhc3M9XCJ0Zy0wcGt5XCI+Um9vbSBGMTwvdGg+XG4gICAgPHRoIGNsYXNzPVwidGctMHBreVwiPlJvb20gRjI8L3RoPlxuICA8L3RyPjwvdGhlYWQ+XG48dGJvZHk+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MDg6MTUgLSAwODo1NTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPlJlZ2lzdHJhdGlvbjogSGFsbCBGYWN1bHR5IG9mIFNjaWVuY2U8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjA5OjAwIC0gMDk6MTU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj5PcGVuaW5nPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4wOToxNSAtIDEwOjE1PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+UGxlbmFyeSBUYWxrOiB7OTF9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xMDoxNSAtIDEwOjQ1PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+Q29mZmVlIGJyZWFrIC0gSGFsbDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+U2Vzc2lvbiAxLkE8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj5TZXNzaW9uIDEuQjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+MTA6NDUgLSAxMTowNTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPns1MH08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57MTB9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xMTowNSAtIDExOjI1PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+ezI0fTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPns0NX08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjExOjI1IC0gMTE6NDU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57NjJ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+ezY4fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MTE6NDUgLSAxMjowMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPlNob3J0IGJyZWFrPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj5TZXNzaW9uIDIuQTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPlNlc3Npb24gMi5CPC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xMjowMCAtIDEyOjIwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+ezE1fTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPnsyMH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjEyOjIwIC0gMTI6NDA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57MjV9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+ezIyfTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MTI6NDAgLSAxMzowMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPns0MX08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj57NzB9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xMzowMCAtIDE1OjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+THVuY2ggKHNlbGYtYXJyYW5nZWQpPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xNTowMCAtIDE2OjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+UGxlbmFyeSB0YWxrOiB7OTJ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xNjowMCAtIDE2OjMwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+Q29mZmVlIGJyZWFrIC0gSGFsbDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+U2Vzc2lvbiAzLkE8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj5TZXNzaW9uIDMuQjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+MTY6MzAgLSAxNjo1MDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPnszMn08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57MTJ9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xNjo1MCAtIDE3OjEwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+ezM4fTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPns1N308L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjE3OjEwIC0gMTg6MDA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj5Qb3N0ZXIgc2Vzc2lvbiAtIEhhbGw8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjE4OjAwIC0gMTg6MzA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj5CdXNpbmVzcyBtZWV0aW5nPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbjwvdGJvZHk+PC90YWJsZT5cbmBcblxubGlzdGFpZC5mb3JFYWNoKGlkID0+IHtcbiAgLy9jb25zdCBkaWQgPSBkYXRhZi5maWx0ZXIoZCA9PiBkLmlkID09IGlkKVxuICAvLyBtb25kYXkgPSBtb25kYXkucmVwbGFjZShcIntcIitpZCtcIn1cIiwgbXVlc3RyYShkaWQpKS8vYDxhIGhyZWY9XCIjJHtpZH1cIj4ke2RpZC5UaXRsZX08L2E+YClcbiAgY29uc3QgZGlkID0gZGF0YWYuZmluZChkID0+IGQuaWQgPT0gaWQpXG4gIG1vbmRheSA9IG1vbmRheS5yZXBsYWNlKFwie1wiK2lkK1wifVwiLCBgJHtkaWQuQXV0aG9yc30sIDxhIGhyZWY9XCIjJHtpZH1cIj48ZW0+JHtkaWQuVGl0bGV9PC9lbT48L2E+YClcblxufSlcbnJldHVybiBtb25kYXlcbn1cblxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYCR7Y2FtYmlhKCl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGF0YWk9ZGF0YWYuZmlsdGVyKGQgPT4gZC50eXBlID09IFwiSVwiKS5zb3J0KChhLCBiKSA9PiBhLkF1dGhvcnMubG9jYWxlQ29tcGFyZShiLkF1dGhvcnMpKVxuXG5odG1sYCR7bXVlc3RyYShkYXRhaSl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGF0YXQ9ZGF0YWYuZmlsdGVyKGQgPT4gZC50eXBlID09IFwiVFwiKS5zb3J0KChhLCBiKSA9PiBhLkF1dGhvcnMubG9jYWxlQ29tcGFyZShiLkF1dGhvcnMpKVxuXG5odG1sYCR7bXVlc3RyYShkYXRhdCl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGF0YXA9ZGF0YWYuZmlsdGVyKGQgPT4gZC50eXBlID09IFwiUFwiKS5zb3J0KChhLCBiKSA9PiBhLkF1dGhvcnMubG9jYWxlQ29tcGFyZShiLkF1dGhvcnMpKVxuXG5odG1sYCR7bXVlc3RyYShkYXRhcCl9YFxuXG4ifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuTWF0aEpheCA9IHtcbiAgY29uc3QgTWF0aEpheCA9IGF3YWl0IHJlcXVpcmUoJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbWF0aGpheEA0L3RleC1zdmcuanMnKVxuICAgIC5jYXRjaCgoKSA9PiB3aW5kb3cuTWF0aEpheClcbiAgcmV0dXJuIE1hdGhKYXhcbn1cblxuXG53bT0gd2luZG93WydNYXRoSmF4J10gPSB7XG4gIHRleDoge1xuICAgIGlubGluZU1hdGg6IHsnWytdJzogW1snJCcsICckJ10sIFsnXFxcXCgnLCAnXFxcXCknXV19XG4gIH0sXG4gIG91dHB1dDoge1xuICAgICAgICBmb250OiAnbWF0aGpheC1maXJhJyxcbiAgICAgICAgZGlzcGxheU92ZXJmbG93OiAnc2Nyb2xsJ1xuICB9XG59O1xuXG5cblxuLy9maWxlID0gRmlsZUF0dGFjaG1lbnQoXCJ0YWxrcy54bHN4XCIpLnhsc3goKSBcbi8vZGF0YSA9IGZpbGUuc2hlZXQoXCJ0YWxrc1wiLCB7cmFuZ2U6XCJBMTpHMjFcIixoZWFkZXJzOiB0cnVlfSlcblxuLy8gZGF0YSA9IFtcbi8vICAge05hbWU6IFwiQWxpY2VcIiwgQWZmaWxpYXRpb246IFwiVW5pdmVyc2l0eSBBXCIsIFRpdGxlOiBcIlRhbGsgb24gJHheMiRcIn0sXG4vLyAgIHtOYW1lOiBcIkJvYlwiLCBBZmZpbGlhdGlvbjogXCJVbml2ZXJzaXR5IEJcIiwgVGl0bGU6IFwiVGFsayBvbiAkeV4yJFwifVxuLy8gXVxuXG5cbmRhdGFmID0gRmlsZUF0dGFjaG1lbnQoXCJhYnN0cmFjdC1kbWQyMDI2LnRzdlwiKS50c3YoKVxuXG5kYXRhPWRhdGFmLnNvcnQoKGEsIGIpID0+IGEuQXV0aG9ycy5sb2NhbGVDb21wYXJlKGIuQXV0aG9ycykpXG5cbmZ1bmN0aW9uIGlzRW1wdHlPclNwYWNlcyhzdHIpe1xuICAgIHJldHVybiBzdHIgPT09IG51bGwgfHwgc3RyLm1hdGNoKC9eICokLykgIT09IG51bGw7XG59XG5cblxubXVlc3RyYSA9IGZ1bmN0aW9uKGRhdGEpe1xudmFyIGNvZGUgPSBcIjxkaXYgaWQ9J3RhbGtzJz5cIlxudmFyIGRheT1cIlwiXG5kYXRhLmZvckVhY2goZCA9PiB7XG5pZiAoIWlzRW1wdHlPclNwYWNlcyhkLmFic3RyYWN0KSkge1xuICAgIC8vY29kZSA9IGNvZGUgK1wiPHAgIGlkPSdcIitkLmlkKyBcIic+XCIgKyBkLkF1dGhvcnMrIFwiLCA8ZW0+XCIgKyBkLlRpdGxlICsgXCIgPC9lbT48L3A+XCJcbiAgICBjb2RlID0gY29kZSArIFwiPGRldGFpbHMgaWQ9J1wiK2QuaWQrXCInPjxzdW1tYXJ5PlwiKyBkLkF1dGhvcnMrIFwiLCA8ZW0+XCIgKyBkLlRpdGxlICsgXCIgPC9lbT48L3N1bW1hcnk+PHA+XCIgKyBkLmFic3RyYWN0ICsgXCI8L3A+PC9kZXRhaWxzPlwiXG59ZWxzZXtcbiAgICBjb2RlID0gY29kZSArXCI8cCAgaWQ9J1wiK2QuaWQrIFwiJz4gJiM5NjU1OyBcIiArIGQuQXV0aG9ycysgXCIsIDxlbT5cIiArIGQuVGl0bGUgKyBcIiA8L2VtPjwvcD5cIlxufVxuY29kZSA9IGNvZGUgKyBcIjwvZGl2PlwiXG59KTtcblxucmV0dXJuIGNvZGVcbn1cblxubXVlc3RyYV9saXN0YSA9IGZ1bmN0aW9uKGRhdGEpe1xudmFyIGNvZGUgPSBcIjxkaXYgaWQ9J3RhbGtzJz48b2w+XCJcbnZhciBkYXk9XCJcIlxuZGF0YS5mb3JFYWNoKGQgPT4ge1xuaWYgKCFpc0VtcHR5T3JTcGFjZXMoZC5hYnN0cmFjdCkpIHtcbiAgICAvL2NvZGUgPSBjb2RlICtcIjxwICBpZD0nXCIrZC5pZCsgXCInPlwiICsgZC5BdXRob3JzKyBcIiwgPGVtPlwiICsgZC5UaXRsZSArIFwiIDwvZW0+PC9wPlwiXG4gICAgY29kZSA9IGNvZGUgKyBcIjxsaSBpZD0nXCIrZC5pZCtcIic+XCIrIGQuQXV0aG9ycysgXCIsIDxlbT5cIiArIGQuVGl0bGUgKyBcIiA8L2VtPlxcbjxwPlwiICsgZC5hYnN0cmFjdCArIFwiPC9wPjwvbGk+XFxuXCJcbn1lbHNle1xuICAgIGNvZGUgPSBjb2RlICtcIjxsaSBpZD0nXCIrZC5pZCsgXCInPlwiICsgZC5BdXRob3JzKyBcIiwgPGVtPlwiICsgZC5UaXRsZSArIFwiIDwvZW0+PC9saT5cIlxufVxufSk7XG5jb2RlID0gY29kZSArIFwiPC9vbD48L2Rpdj5cIlxuXG5yZXR1cm4gY29kZVxufVxuXG5cbi8vaHRtbGAke2RhdGEubWFwKGQgPT4gaHRtbGA8cD4ke2QuTmFtZX0gJHtkLkFmZmlsaWF0aW9ufSAke2QuVGl0bGV9PC9wPmApfWBcblxuLy9odG1sYDxwPiR7ZGF0YVswXS5UaXRsZS52YWx9PC9wPmBcblxuLy8gYmxhaCA9XCIkeF4yJFwiXG5cbi8vIGJsZSA9IGRhdGFbMF0uVGl0bGVcblxuLy8gYmx1ID0gYmxlICsgXCIgJHheMiRcIlxuXG4vLyBleGFtcGxlID0gaHRtbGAke2JsYWh9YFxuXG4vLyBleCA9IGh0bWxgJHtibHV9YFxuXG5saXN0YWlkID0gZGF0YWYubWFwKGQgPT4gZC5pZClcblxuLy9saXN0YWlkXG5cbi8vIFVzZSB0aGUgZm9sbG93aW5nIGNvZGUgdG8gZ2VuZXJhdGUgdGhlIHRhYmxlIHN0cnVjdHVyZSBmb3IgdGhlIHNjaGVkdWxlLiBZb3UgY2FuIHJlcGxhY2UgdGhlIGNvbnRlbnQgb2YgdGhlIGNlbGxzIHdpdGggdGhlIGFwcHJvcHJpYXRlIGluZm9ybWF0aW9uIGZvciBlYWNoIHNlc3Npb24gYW5kIHRhbGsuXG4vLyA8Y29sZ3JvdXA+XG4vLyAgICA8Y29sIHNwYW49XCIxXCIgc3R5bGU9XCJ3aWR0aDogMTUlO1wiPlxuLy8gICAgPGNvbCBzcGFuPVwiMVwiIHN0eWxlPVwid2lkdGg6IDQwJTtcIj5cbi8vICAgIDxjb2wgc3Bhbj1cIjFcIiBzdHlsZT1cIndpZHRoOiA0MCU7XCI+XG4vLyA8L2NvbGdyb3VwPlxuXG5tb25kYXkgPSBgXG48dGFibGUgY2xhc3M9XCJ0Z1wiPlxuICAgIDxjb2xncm91cD5cbiAgICAgICA8Y29sIHNwYW49XCIxXCIgc3R5bGU9XCJ3aWR0aDogMTUlO1wiPlxuICAgICAgIDxjb2wgc3Bhbj1cIjFcIiBzdHlsZT1cIndpZHRoOiA0MCU7XCI+XG4gICAgICAgPGNvbCBzcGFuPVwiMVwiIHN0eWxlPVwid2lkdGg6IDQwJTtcIj5cbiAgICA8L2NvbGdyb3VwPlxuXG48dGhlYWQ+XG4gIDx0cj5cbiAgICA8dGggY2xhc3M9XCJ0Zy0wcGt5XCI+MjkvMDYvMjAyNjwvdGg+XG4gICAgPHRoIGNsYXNzPVwidGctMHBreVwiPlJvb20gRjE8L3RoPlxuICAgIDx0aCBjbGFzcz1cInRnLTBwa3lcIj5Sb29tIEYyPC90aD5cbiAgPC90cj48L3RoZWFkPlxuPHRib2R5PlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjA4OjE1IC0gMDg6NTU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj5SZWdpc3RyYXRpb246IEhhbGwgRmFjdWx0eSBvZiBTY2llbmNlPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4wOTowMCAtIDA5OjE1PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+T3BlbmluZzwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MDk6MTUgLSAxMDoxNTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPlBsZW5hcnkgVGFsazogezkxfTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+MTA6MTUgLSAxMDo0NTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPkNvZmZlZSBicmVhayAtIEhhbGw8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjxzdHJvbmc+U2Vzc2lvbiAxLkE8L3N0cm9uZz48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj48c3Ryb25nPlNlc3Npb24gMS5CPC9zdHJvbmc+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xMDo0NSAtIDExOjA1PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+ezUwfTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPnsxMH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjExOjA1IC0gMTE6MjU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj57MjR9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+ezQ1fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+MTE6MjUgLSAxMTo0NTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPns2Mn08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57Njh9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xMTo0NSAtIDEyOjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+U2hvcnQgYnJlYWs8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjxzdHJvbmc+U2Vzc2lvbiAyLkE8L3N0cm9uZz48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj48c3Ryb25nPlNlc3Npb24gMi5CPC9zdHJvbmc+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xMjowMCAtIDEyOjIwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+ezE1fTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPnsyMH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjEyOjIwIC0gMTI6NDA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57MjV9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+ezIyfTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MTI6NDAgLSAxMzowMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPns0MX08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj57NzB9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xMzowMCAtIDE1OjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+THVuY2ggKHNlbGYtYXJyYW5nZWQpPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xNTowMCAtIDE2OjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+UGxlbmFyeSB0YWxrOiB7OTJ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xNjowMCAtIDE2OjMwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+Q29mZmVlIGJyZWFrIC0gSGFsbDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+PHN0cm9uZz5TZXNzaW9uIDMuQTwvc3Ryb25nPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjxzdHJvbmc+U2Vzc2lvbiAzLkI8L3N0cm9uZz48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMHBreVwiPjE2OjMwIC0gMTY6NTA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj57MzJ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+ezEyfTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+MTY6NTAgLSAxNzoxMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPnszOH08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj57NTd9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBwa3lcIj4xNzoxMCAtIDE4OjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+UG9zdGVyIHNlc3Npb24gLSBIYWxsPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wcGt5XCI+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLWJ0eGZcIj4xODowMCAtIDE4OjMwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy1idHhmXCI+QnVzaW5lc3MgbWVldGluZzwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctYnR4ZlwiPjwvdGQ+XG4gIDwvdHI+XG48L3Rib2R5PjwvdGFibGU+XG5gXG5cblxudHVlc2RheT0gYFxuPHRhYmxlIGNsYXNzPVwidGdcIj5cbiAgICA8Y29sZ3JvdXA+XG4gICAgICAgPGNvbCBzcGFuPVwiMVwiIHN0eWxlPVwid2lkdGg6IDE1JTtcIj5cbiAgICAgICA8Y29sIHNwYW49XCIxXCIgc3R5bGU9XCJ3aWR0aDogNDAlO1wiPlxuICAgICAgIDxjb2wgc3Bhbj1cIjFcIiBzdHlsZT1cIndpZHRoOiA0MCU7XCI+XG4gICAgPC9jb2xncm91cD5cblxuPHRoZWFkPlxuICA8dHI+XG4gICAgPHRoIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPjMwLzA2LzIwMjY8L3NwYW4+PC90aD5cbiAgICA8dGggY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpib2xkXCI+Um9vbSBGMTwvc3Bhbj48L3RoPlxuICAgIDx0aCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5Sb29tIEYyPC9zcGFuPjwvdGg+XG4gIDwvdHI+PC90aGVhZD5cbjx0Ym9keT5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0Om5vcm1hbFwiPjA5OjE1IC0gMTA6MTU8L3NwYW4+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCIgY29sc3Bhbj1cIjJcIj5QbGVuYXJ5IFRhbGs6IHs5NH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+MTA6MTUgLSAxMDo0NTwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIiBjb2xzcGFuPVwiMlwiPkNvZmZlZSBicmVhayAtIEhhbGw8L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNC5BPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNC5CPC9zcGFuPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTA6NDUgLSAxMTowNTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns4fTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPnsyN308L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjExOjA1IC0gMTE6MjU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57NTV9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezI5fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTE6MjUgLSAxMTogNDU8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57NTl9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezQ5fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj4xMTo0NSAtIDEyOjAwPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiIGNvbHNwYW49XCIyXCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj5TaG9ydCBicmVhazwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNS5BPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNS5CPC9zcGFuPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTI6MDAgLSAxMjoyMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPnszMX08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57MzV9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj4xMjoyMCAtIDEyOjQwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezYzfTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns2MH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjEyOjQwIC0gMTM6MDA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57NDh9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezQ0fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj4xMzowMCAtIDEzOjEwPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiIGNvbHNwYW49XCIyXCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj5Hcm91cCBwaG90bzwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+MTM6MTAgLSAxNTowMDwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIiBjb2xzcGFuPVwiMlwiPkx1bmNoIChzZWxmLWFycmFuZ2VkKTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj4xNTowMCAtIDE2OjAwPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiIGNvbHNwYW49XCIyXCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj5SYW1vbiBMdWxsIHByaXplIHRhbGs8L3NwYW4+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0Om5vcm1hbFwiPjE2OjAwIC0gMTY6MzA8L3NwYW4+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCIgY29sc3Bhbj1cIjJcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0Om5vcm1hbFwiPkNvZmZlZSBicmVhazwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNi5BPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlNlc3Npb24gNi5CPC9zcGFuPjwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTY6MzAgLSAxNjo1MDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns1Mn08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57Mn08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjE2OjUwIC0gMTc6MTA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57NTZ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezY1fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj4xODozMCAtIDE5OjMwPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiIGNvbHNwYW49XCIyXCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj5FeGN1cnNpb246IE1hdGggd2Fsazwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+MjA6MzAgLSAyMjozMDwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIiBjb2xzcGFuPVwiMlwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+R2FsYSBkaW5uZXI8L3NwYW4+PC90ZD5cbiAgPC90cj5cbjwvdGJvZHk+PC90YWJsZT5cbmBcblxud2VkbmVzZGF5PSBgXG48dGFibGUgY2xhc3M9XCJ0Z1wiPlxuICAgIDxjb2xncm91cD5cbiAgICAgICA8Y29sIHNwYW49XCIxXCIgc3R5bGU9XCJ3aWR0aDogMTUlO1wiPlxuICAgICAgIDxjb2wgc3Bhbj1cIjFcIiBzdHlsZT1cIndpZHRoOiA0MCU7XCI+XG4gICAgICAgPGNvbCBzcGFuPVwiMVwiIHN0eWxlPVwid2lkdGg6IDQwJTtcIj5cbiAgICA8L2NvbGdyb3VwPlxuXG48dGhlYWQ+XG4gIDx0cj5cbiAgICA8dGggY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpib2xkXCI+MDEvMDcvMjAyNjwvc3Bhbj48L3RoPlxuICAgIDx0aCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5Sb29tIEYxPC9zcGFuPjwvdGg+XG4gICAgPHRoIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6Ym9sZFwiPlJvb20gRjI8L3NwYW4+PC90aD5cbiAgPC90cj48L3RoZWFkPlxuPHRib2R5PlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+MDk6MzAgLSAxMDozMDwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIiBjb2xzcGFuPVwiMlwiPlBsZW5hcnkgVGFsazogezkzfTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj4xMDozMCAtIDExOjAwPC9zcGFuPjwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiIGNvbHNwYW49XCIyXCI+PHNwYW4gc3R5bGU9XCJmb250LXdlaWdodDpub3JtYWxcIj5Db2ZmZWUgYnJlYWs8L3NwYW4+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5TZXNzaW9uIDcuQTwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5TZXNzaW9uIDcuQjwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjExOjAwIC0gMTE6MjA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57MjN9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezEzfTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTE6MjAgLSAxMTo0MDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns0MH08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57MTd9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj4xMTo0MCAtIDEyOjAwPC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezcxfTwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns2NH08L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+MTE6MDAgLSAxMjoyMDwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIiBjb2xzcGFuPVwiMlwiPjxzcGFuIHN0eWxlPVwiZm9udC13ZWlnaHQ6bm9ybWFsXCI+U2hvcnQgYnJlYWs8L3NwYW4+PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5TZXNzaW9uIDguQTwvc3Bhbj48L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0OmJvbGRcIj5TZXNzaW9uIDguQjwvc3Bhbj48L3RkPlxuICA8L3RyPlxuICA8dHI+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPjEyOjIwIC0gMTI6NDA8L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57MzZ9PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+ezE0fTwvdGQ+XG4gIDwvdHI+XG4gIDx0cj5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCI+MTI6NDAgLSAxMzowMDwvdGQ+XG4gICAgPHRkIGNsYXNzPVwidGctMGxheFwiPns2MX08L3RkPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj57Mjh9PC90ZD5cbiAgPC90cj5cbiAgPHRyPlxuICAgIDx0ZCBjbGFzcz1cInRnLTBsYXhcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0Om5vcm1hbFwiPjEzOjAwIC0gMTM6MTA8L3NwYW4+PC90ZD5cbiAgICA8dGQgY2xhc3M9XCJ0Zy0wbGF4XCIgY29sc3Bhbj1cIjJcIj48c3BhbiBzdHlsZT1cImZvbnQtd2VpZ2h0Om5vcm1hbFwiPkZhcmV3ZWxsPC9zcGFuPjwvdGQ+XG4gIDwvdHI+XG48L3Rib2R5PjwvdGFibGU+XG5gXG5cbmNhbWJpYSA9IGZ1bmN0aW9uKGRheSl7XG5cbiAgbGV0IGRheW5ldyA9IGRheVxuICBsaXN0YWlkLmZvckVhY2goaWQgPT4ge1xuICAvL2NvbnN0IGRpZCA9IGRhdGFmLmZpbHRlcihkID0+IGQuaWQgPT0gaWQpXG4gIC8vIG1vbmRheSA9IG1vbmRheS5yZXBsYWNlKFwie1wiK2lkK1wifVwiLCBtdWVzdHJhKGRpZCkpLy9gPGEgaHJlZj1cIiMke2lkfVwiPiR7ZGlkLlRpdGxlfTwvYT5gKVxuICBjb25zdCBkaWQgPSBkYXRhZi5maW5kKGQgPT4gZC5pZCA9PSBpZClcbiAgaWYgKCFpc0VtcHR5T3JTcGFjZXMoZGlkLmFic3RyYWN0KSl7XG4gICAgZGF5bmV3ID0gZGF5bmV3LnJlcGxhY2UoXCJ7XCIraWQrXCJ9XCIsIGAke2RpZC5BdXRob3JzfSwgPGEgaHJlZj1cIiMke2lkfVwiPjxlbT4ke2RpZC5UaXRsZX08L2VtPjwvYT5gKVxuICB9ZWxzZXtcbiAgICBkYXluZXcgPSBkYXluZXcucmVwbGFjZShcIntcIitpZCtcIn1cIiwgYCR7ZGlkLkF1dGhvcnN9LCA8ZW0+JHtkaWQuVGl0bGV9PC9lbT5gKVxuICB9XG59KVxucmV0dXJuIGRheW5ld1xufVxuXG5cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgJHtjYW1iaWEobW9uZGF5KX1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYCR7Y2FtYmlhKHR1ZXNkYXkpfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgJHtjYW1iaWEod2VkbmVzZGF5KX1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkYXRhaT1kYXRhZi5maWx0ZXIoZCA9PiBkLnR5cGUgPT0gXCJJXCIpLnNvcnQoKGEsIGIpID0+IGEuQXV0aG9ycy5sb2NhbGVDb21wYXJlKGIuQXV0aG9ycykpXG5cbmh0bWxgJHttdWVzdHJhX2xpc3RhKGRhdGFpKX1gXG5cbi8vbXVlc3RyYV9saXN0YShkYXRhaSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGF0PWRhdGFmLmZpbHRlcihkID0+IGQudHlwZSA9PSBcIlRcIikuc29ydCgoYSwgYikgPT4gYS5BdXRob3JzLmxvY2FsZUNvbXBhcmUoYi5BdXRob3JzKSlcblxuaHRtbGAke211ZXN0cmFfbGlzdGEoZGF0YXQpfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGFwPWRhdGFmLmZpbHRlcihkID0+IGQudHlwZSA9PSBcIlBcIikuc29ydCgoYSwgYikgPT4gYS5BdXRob3JzLmxvY2FsZUNvbXBhcmUoYi5BdXRob3JzKSlcblxuaHRtbGAke211ZXN0cmFfbGlzdGEoZGF0YXApfWBcblxuIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
