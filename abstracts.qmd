@@ -71,7 +71,7 @@ return code
 }
 
 muestra_lista = function(data){
-var code = "<div id='talks'><ol>"
+var code = "<div id='talks'><ul>"
 var day=""
 data.forEach(d => {
 if (!isEmptyOrSpaces(d.abstract)) {
@@ -81,7 +81,7 @@ if (!isEmptyOrSpaces(d.abstract)) {
     code = code +"<li id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></li>"
 }
 });
-code = code + "</ol></div>"
+code = code + "</ul></div>"
 
 return code
 }
