@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -208,13 +237,35 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!--A list of plenary speakers-->
-<ul>
-<li><a href="https://tina.juhnix.net/">Martina Juhnke</a> (Universität Osnabrück)</li>
-<li><a href="https://www.ub.edu/comb/koljaknauer/">Kolja Knauer</a> (Universitat de Barcelona)</li>
-<li><a href="https://www.iam.uni-bonn.de/users/sauermann/home">Lisa Sauermann</a> (Universität Bonn)<br>
-</li>
-<li><a href="https://www.lirmm.fr/~thilikosto/">Dimitrios Thilikos</a> (LIRMM, Montpellier)</li>
-</ul>
+<details>
+<summary>
+<a href="https://tina.juhnix.net/">Martina Juhnke</a>, Universität Osnabrück, Monotone paths on polytopes: Positive and negative results
+</summary>
+<p>To solve a linear program, the simplex method follows a path in the graph of a polytope, on which a linear function increases. The length of this path is a key measure of the complexity of the simplex method. Our starting point is a conjecture by Jesús De Loera stating that the number of paths counted according to their length forms a unimodal sequence. We give examples (old and new) for which this conjecture is true but we disprove this conjecture by constructing counterexamples for several classes of polytopes. However, we show that De Loera is “statistically correct”: We prove that the length of a coherent path on a random polytope (with vertices chosen uniformly on a sphere) admits a central limit theorem. This is joint work with Germain Poullot.</p>
+</details>
+<details>
+<summary>
+<a href="https://www.ub.edu/comb/koljaknauer/">Kolja Knauer</a>, Universitat de Barcelona, Endomorphisms of Sparse Graphs
+</summary>
+<p>An endomorphism of a graph is a homomorphism from the graph to itself. Since endomorphisms are closed under composition, they form a monoid. It has been known since the 1960s that every finite monoid is isomorphic to the endomorphism monoid of some graph. This naturally led to the question of how restrictive a graph class <span class="math inline">\(\mathcal G\)</span> can be while still realizing every monoid (from a given class) as the endomorphism monoid of a graph in <span class="math inline">\(\mathcal G\)</span>.</p>
+<p>Particular attention has been devoted to sparse graph classes, such as planar graphs, minor-closed classes, and bounded-degree graphs. In this talk, I will survey some of the developments in this area and present two recent results that answer questions posed by Babai and Pultr in the 1980s:</p>
+<ol type="1">
+<li>Every commutative idempotent monoid (equivalently, every finite lattice) is isomorphic to the endomorphism monoid of a subcubic graph.</li>
+<li>Every monoid is isomorphic to the endomorphism monoid of a regular graph.</li>
+</ol>
+Joint work with Gil Puig i Surroca.
+</details>
+<details>
+<summary>
+<a href="https://www.iam.uni-bonn.de/users/sauermann/home">Lisa Sauermann</a>, Universität Bonn, TBA
+</summary>
+</details>
+<details>
+<summary>
+<a href="https://www.lirmm.fr/~thilikosto/">Dimitrios Thilikos</a>, LIRMM, Montpellier, Deciding Asymptotic Properties of Minor-Closed Graph Classes
+</summary>
+We examine the general problem of deciding properties of graph classes under the lens of quasi ordering relations. In particular, we consider properties of minor-closed graph classes whose finite descriptions are given by their obstruction sets. The question of whether such descriptions can be accompanied by polynomial-time decision algorithms can be viewed as a consequence of major questions in order theory. We present two instantiations of this general question for which such algorithms exist and can be explicitly constructed. In particular we examine asymptotic properties of minor-closed graph classes, such as growth constants and limiting densities.
+</details>
 
 
 
