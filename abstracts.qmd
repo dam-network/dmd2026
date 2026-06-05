@@ -9,7 +9,7 @@ page-layout: full
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;vertical-align: top;}
 .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;background:transparent;}
 .tg .tg-btxf{background-color:#f9f9f9;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
@@ -246,101 +246,101 @@ tuesday= `
 
 <thead>
   <tr>
-    <th class="tg-0lax"><span style="font-weight:bold">30/06/2026</span></th>
-    <th class="tg-0lax"><span style="font-weight:bold">Room F1</span></th>
-    <th class="tg-0lax"><span style="font-weight:bold">Room F2</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">30/06/2026</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">Room F1</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">Room F2</span></th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">09:15 - 10:15</span></td>
-    <td class="tg-0lax" colspan="2">Plenary Talk: {94}</td>
+    <td class="tg-btxf"><span style="font-weight:normal">09:15 - 10:15</span></td>
+    <td class="tg-btxf" colspan="2">Plenary Talk: {94}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">10:15 - 10:45</span></td>
-    <td class="tg-0lax" colspan="2">Coffee break - Hall</td>
+    <td class="tg-0pky"><span style="font-weight:normal">10:15 - 10:45</span></td>
+    <td class="tg-0pky" colspan="2">Coffee break - Hall</td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 4.A</span></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 4.B</span></td>
+    <td class="tg-btxf"></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 4.A</span></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 4.B</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax">10:45 - 11:05</td>
-    <td class="tg-0lax">{8}</td>
-    <td class="tg-0lax">{27}</td>
+    <td class="tg-0pky">10:45 - 11:05</td>
+    <td class="tg-0pky">{8}</td>
+    <td class="tg-0pky">{27}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">11:05 - 11:25</td>
-    <td class="tg-0lax">{55}</td>
-    <td class="tg-0lax">{29}</td>
+    <td class="tg-btxf">11:05 - 11:25</td>
+    <td class="tg-btxf">{55}</td>
+    <td class="tg-btxf">{29}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">11:25 - 11: 45</td>
-    <td class="tg-0lax">{59}</td>
-    <td class="tg-0lax">{49}</td>
+    <td class="tg-0pky">11:25 - 11: 45</td>
+    <td class="tg-0pky">{59}</td>
+    <td class="tg-0pky">{49}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">11:45 - 12:00</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Short break</span></td>
+    <td class="tg-btxf"><span style="font-weight:normal">11:45 - 12:00</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Short break</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 5.A</span></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 5.B</span></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 5.A</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 5.B</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax">12:00 - 12:20</td>
-    <td class="tg-0lax">{31}</td>
-    <td class="tg-0lax">{35}</td>
+    <td class="tg-btxf">12:00 - 12:20</td>
+    <td class="tg-btxf">{31}</td>
+    <td class="tg-btxf">{35}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">12:20 - 12:40</td>
-    <td class="tg-0lax">{63}</td>
-    <td class="tg-0lax">{60}</td>
+    <td class="tg-0pky">12:20 - 12:40</td>
+    <td class="tg-0pky">{63}</td>
+    <td class="tg-0pky">{60}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">12:40 - 13:00</td>
-    <td class="tg-0lax">{48}</td>
-    <td class="tg-0lax">{44}</td>
+    <td class="tg-btxf">12:40 - 13:00</td>
+    <td class="tg-btxf">{48}</td>
+    <td class="tg-btxf">{44}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">13:00 - 13:10</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Group photo</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">13:00 - 13:10</span></td>
+    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Group photo</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">13:10 - 15:00</span></td>
-    <td class="tg-0lax" colspan="2">Lunch (self-arranged)</td>
+    <td class="tg-btxf"><span style="font-weight:normal">13:10 - 15:00</span></td>
+    <td class="tg-btxf" colspan="2">Lunch (self-arranged)</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">15:00 - 16:00</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Ramon Lull prize talk</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">15:00 - 16:00</span></td>
+    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Ramon Lull prize talk</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">16:00 - 16:30</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
+    <td class="tg-btxf"><span style="font-weight:normal">16:00 - 16:30</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 6.A</span></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 6.B</span></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 6.A</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 6.B</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax">16:30 - 16:50</td>
-    <td class="tg-0lax">{52}</td>
-    <td class="tg-0lax">{2}</td>
+    <td class="tg-btxf">16:30 - 16:50</td>
+    <td class="tg-btxf">{52}</td>
+    <td class="tg-btxf">{2}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">16:50 - 17:10</td>
-    <td class="tg-0lax">{56}</td>
-    <td class="tg-0lax">{65}</td>
+    <td class="tg-0pky">16:50 - 17:10</td>
+    <td class="tg-0pky">{56}</td>
+    <td class="tg-0pky">{65}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">18:30 - 19:30</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
+    <td class="tg-btxf"><span style="font-weight:normal">18:30 - 19:30</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">20:30 - 22:30</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Gala dinner</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">20:30 - 22:30</span></td>
+    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Gala dinner</span></td>
   </tr>
 </tbody></table>
 `
@@ -355,61 +355,61 @@ wednesday= `
 
 <thead>
   <tr>
-    <th class="tg-0lax"><span style="font-weight:bold">01/07/2026</span></th>
-    <th class="tg-0lax"><span style="font-weight:bold">Room F1</span></th>
-    <th class="tg-0lax"><span style="font-weight:bold">Room F2</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">01/07/2026</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">Room F1</span></th>
+    <th class="tg-0pky"><span style="font-weight:bold">Room F2</span></th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">09:30 - 10:30</span></td>
-    <td class="tg-0lax" colspan="2">Plenary Talk: {93}</td>
+    <td class="tg-btxf"><span style="font-weight:normal">09:30 - 10:30</span></td>
+    <td class="tg-btxf" colspan="2">Plenary Talk: {93}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">10:30 - 11:00</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
+    <td class="tg-0pky"><span style="font-weight:normal">10:30 - 11:00</span></td>
+    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 7.A</span></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 7.B</span></td>
+    <td class="tg-btxf"></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 7.A</span></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 7.B</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax">11:00 - 11:20</td>
-    <td class="tg-0lax">{23}</td>
-    <td class="tg-0lax">{13}</td>
+    <td class="tg-0pky">11:00 - 11:20</td>
+    <td class="tg-0pky">{23}</td>
+    <td class="tg-0pky">{13}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">11:20 - 11:40</td>
-    <td class="tg-0lax">{40}</td>
-    <td class="tg-0lax">{17}</td>
+    <td class="tg-btxf">11:20 - 11:40</td>
+    <td class="tg-btxf">{40}</td>
+    <td class="tg-btxf">{17}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">11:40 - 12:00</td>
-    <td class="tg-0lax">{71}</td>
-    <td class="tg-0lax">{64}</td>
+    <td class="tg-0pky"><span style="font-weight:normal">11:40 - 12:00</span></td>
+    <td class="tg-0pky">{71}</td>
+    <td class="tg-0pky">{64}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">11:00 - 12:20</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Short break</span></td>
+    <td class="tg-btxf"><span style="font-weight:normal">11:00 - 12:20</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Short break</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 8.A</span></td>
-    <td class="tg-0lax"><span style="font-weight:bold">Session 8.B</span></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 8.A</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 8.B</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax">12:20 - 12:40</td>
-    <td class="tg-0lax">{36}</td>
-    <td class="tg-0lax">{14}</td>
+    <td class="tg-btxf">12:20 - 12:40</td>
+    <td class="tg-btxf">{36}</td>
+    <td class="tg-btxf">{14}</td>
   </tr>
   <tr>
-    <td class="tg-0lax">12:40 - 13:00</td>
-    <td class="tg-0lax">{61}</td>
-    <td class="tg-0lax">{28}</td>
+    <td class="tg-0pky">12:40 - 13:00</td>
+    <td class="tg-0pky">{61}</td>
+    <td class="tg-0pky">{28}</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="font-weight:normal">13:00 - 13:10</span></td>
-    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Farewell</span></td>
+    <td class="tg-btxf"><span style="font-weight:normal">13:00 - 13:10</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Farewell</span></td>
   </tr>
 </tbody></table>
 `
