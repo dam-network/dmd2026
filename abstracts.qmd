@@ -47,7 +47,7 @@ wm= window['MathJax'] = {
 
 dataf = FileAttachment("abstract-dmd2026.tsv").tsv()
 
-data=dataf.sort((a, b) => a.Authors.localeCompare(b.Authors))
+data=dataf.sort((a, b) => a.Apellidos.localeCompare(b.Apellidos))
 
 function isEmptyOrSpaces(str){
     return str === null || str.match(/^ *$/) !== null;
@@ -463,7 +463,7 @@ html`${cambia(wednesday)}`
 
 ```{ojs}
 //| echo: false
-datai=dataf.filter(d => d.type == "I").sort((a, b) => a.Authors.localeCompare(b.Authors))
+datai=dataf.filter(d => d.type == "I").sort((a, b) => a.Apellidos.localeCompare(b.Apellidos))
 
 html`${muestra_lista(datai)}`
 
@@ -475,7 +475,7 @@ html`${muestra_lista(datai)}`
 
 ```{ojs}
 //| echo: false
-datat=dataf.filter(d => d.type == "T").sort((a, b) => a.Authors.localeCompare(b.Authors))
+datat=dataf.filter(d => d.type == "T").sort((a, b) => a.Apellidos.localeCompare(b.Apellidos))
 
 html`${muestra_lista(datat)}`
 ```
@@ -485,7 +485,7 @@ html`${muestra_lista(datat)}`
 
 ```{ojs}
 //| echo: false
-datap=dataf.filter(d => d.type == "P").sort((a, b) => a.Authors.localeCompare(b.Authors))
+datap=dataf.filter(d => d.type == "P").sort((a, b) => a.Apellidos.localeCompare(b.Apellidos))
 
 html`${muestra_lista(datap)}`
 
