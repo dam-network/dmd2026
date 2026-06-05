@@ -1,7 +1,17 @@
 ---
 title: "Abstracts"
+page-layout: full
 ---
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;vertical-align: top;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-btxf{background-color:#f9f9f9;border-color:inherit;text-align:left;vertical-align:top}
+</style>
 
 ```{ojs}
 //| echo: false
@@ -72,8 +82,158 @@ return code
 // example = html`${blah}`
 
 // ex = html`${blu}`
+
+listaid = dataf.map(d => d.id)
+
+//listaid
+
+
+cambia = function(){
+var monday = `
+<table class="tg">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 40%;">
+    </colgroup>
+
+<thead>
+  <tr>
+    <th class="tg-0pky">29/06/2026</th>
+    <th class="tg-0pky">Room F1</th>
+    <th class="tg-0pky">Room F2</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-btxf">08:15 - 08:55</td>
+    <td class="tg-btxf">Registration: Hall Faculty of Science</td>
+    <td class="tg-btxf"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">09:00 - 09:15</td>
+    <td class="tg-0pky">Opening</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">09:15 - 10:15</td>
+    <td class="tg-btxf">Plenary Talk: {91}</td>
+    <td class="tg-btxf"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">10:15 - 10:45</td>
+    <td class="tg-0pky">Coffee break - Hall</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-btxf"></td>
+    <td class="tg-btxf">Session 1.A</td>
+    <td class="tg-btxf">Session 1.B</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">10:45 - 11:05</td>
+    <td class="tg-0pky">{50}</td>
+    <td class="tg-0pky">{10}</td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">11:05 - 11:25</td>
+    <td class="tg-btxf">{24}</td>
+    <td class="tg-btxf">{45}</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">11:25 - 11:45</td>
+    <td class="tg-0pky">{62}</td>
+    <td class="tg-0pky">{68}</td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">11:45 - 12:00</td>
+    <td class="tg-btxf">Short break</td>
+    <td class="tg-btxf"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Session 2.A</td>
+    <td class="tg-0pky">Session 2.B</td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">12:00 - 12:20</td>
+    <td class="tg-btxf">{15}</td>
+    <td class="tg-btxf">{20}</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">12:20 - 12:40</td>
+    <td class="tg-0pky">{25}</td>
+    <td class="tg-0pky">{22}</td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">12:40 - 13:00</td>
+    <td class="tg-btxf">{41}</td>
+    <td class="tg-btxf">{70}</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">13:00 - 15:00</td>
+    <td class="tg-0pky">Lunch (self-arranged)</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">15:00 - 16:00</td>
+    <td class="tg-btxf">Plenary talk: {92}</td>
+    <td class="tg-btxf"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">16:00 - 16:30</td>
+    <td class="tg-0pky">Coffee break - Hall</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-btxf"></td>
+    <td class="tg-btxf">Session 3.A</td>
+    <td class="tg-btxf">Session 3.B</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">16:30 - 16:50</td>
+    <td class="tg-0pky">{32}</td>
+    <td class="tg-0pky">{12}</td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">16:50 - 17:10</td>
+    <td class="tg-btxf">{38}</td>
+    <td class="tg-btxf">{57}</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">17:10 - 18:00</td>
+    <td class="tg-0pky">Poster session - Hall</td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-btxf">18:00 - 18:30</td>
+    <td class="tg-btxf">Business meeting</td>
+    <td class="tg-btxf"></td>
+  </tr>
+</tbody></table>
+`
+
+listaid.forEach(id => {
+  //const did = dataf.filter(d => d.id == id)
+  // monday = monday.replace("{"+id+"}", muestra(did))//`<a href="#${id}">${did.Title}</a>`)
+  const did = dataf.find(d => d.id == id)
+  monday = monday.replace("{"+id+"}", `${did.Authors}, <a href="#${id}"><em>${did.Title}</em></a>`)
+
+})
+return monday
+}
+
+
 ```
 
+
+## Programme 
+
+### Monday, 29 June 2026
+
+```{ojs}
+//| echo: false
+html`${cambia()}`
+```
 
 ## Plenary Talks
 
@@ -104,3 +264,5 @@ datap=dataf.filter(d => d.type == "P").sort((a, b) => a.Authors.localeCompare(b.
 html`${muestra(datap)}`
 
 ```
+
+
