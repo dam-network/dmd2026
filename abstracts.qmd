@@ -11,6 +11,7 @@ page-layout: full
   font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-btxf{background-color:#f9f9f9;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 
 ```{ojs}
@@ -69,6 +70,23 @@ code = code + "</div>"
 return code
 }
 
+muestra_lista = function(data){
+var code = "<div id='talks'><ol>"
+var day=""
+data.forEach(d => {
+if (!isEmptyOrSpaces(d.abstract)) {
+    //code = code +"<p  id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></p>"
+    code = code + "<li id='"+d.id+"'>"+ d.Authors+ ", <em>" + d.Title + " </em>\n<p>" + d.abstract + "</p></li>\n"
+}else{
+    code = code +"<li id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></li>"
+}
+});
+code = code + "</ol></div>"
+
+return code
+}
+
+
 //html`${data.map(d => html`<p>${d.Name} ${d.Affiliation} ${d.Title}</p>`)}`
 
 //html`<p>${data[0].Title.val}</p>`
@@ -87,9 +105,14 @@ listaid = dataf.map(d => d.id)
 
 //listaid
 
+// Use the following code to generate the table structure for the schedule. You can replace the content of the cells with the appropriate information for each session and talk.
+// <colgroup>
+//    <col span="1" style="width: 15%;">
+//    <col span="1" style="width: 40%;">
+//    <col span="1" style="width: 40%;">
+// </colgroup>
 
-cambia = function(){
-var monday = `
+monday = `
 <table class="tg">
     <colgroup>
        <col span="1" style="width: 15%;">
@@ -126,8 +149,8 @@ var monday = `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf">Session 1.A</td>
-    <td class="tg-btxf">Session 1.B</td>
+    <td class="tg-btxf"><strong>Session 1.A</strong></td>
+    <td class="tg-btxf"><strong>Session 1.B</strong></td>
   </tr>
   <tr>
     <td class="tg-0pky">10:45 - 11:05</td>
@@ -151,8 +174,8 @@ var monday = `
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">Session 2.A</td>
-    <td class="tg-0pky">Session 2.B</td>
+    <td class="tg-0pky"><strong>Session 2.A</strong></td>
+    <td class="tg-0pky"><strong>Session 2.B</strong></td>
   </tr>
   <tr>
     <td class="tg-btxf">12:00 - 12:20</td>
@@ -186,8 +209,8 @@ var monday = `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf">Session 3.A</td>
-    <td class="tg-btxf">Session 3.B</td>
+    <td class="tg-btxf"><strong>Session 3.A</strong></td>
+    <td class="tg-btxf"><strong>Session 3.B</strong></td>
   </tr>
   <tr>
     <td class="tg-0pky">16:30 - 16:50</td>
@@ -212,14 +235,199 @@ var monday = `
 </tbody></table>
 `
 
-listaid.forEach(id => {
+
+tuesday= `
+<table class="tg">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 40%;">
+    </colgroup>
+
+<thead>
+  <tr>
+    <th class="tg-0lax"><span style="font-weight:bold">30/06/2026</span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Room F1</span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Room F2</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">09:15 - 10:15</span></td>
+    <td class="tg-0lax" colspan="2">Plenary Talk: {94}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">10:15 - 10:45</span></td>
+    <td class="tg-0lax" colspan="2">Coffee break - Hall</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 4.A</span></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 4.B</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">10:45 - 11:05</td>
+    <td class="tg-0lax">{8}</td>
+    <td class="tg-0lax">{27}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11:05 - 11:25</td>
+    <td class="tg-0lax">{55}</td>
+    <td class="tg-0lax">{29}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11:25 - 11: 45</td>
+    <td class="tg-0lax">{59}</td>
+    <td class="tg-0lax">{49}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">11:45 - 12:00</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Short break</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 5.A</span></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 5.B</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12:00 - 12:20</td>
+    <td class="tg-0lax">{31}</td>
+    <td class="tg-0lax">{35}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12:20 - 12:40</td>
+    <td class="tg-0lax">{63}</td>
+    <td class="tg-0lax">{60}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12:40 - 13:00</td>
+    <td class="tg-0lax">{48}</td>
+    <td class="tg-0lax">{44}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">13:00 - 13:10</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Group photo</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">13:10 - 15:00</span></td>
+    <td class="tg-0lax" colspan="2">Lunch (self-arranged)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">15:00 - 16:00</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Ramon Lull prize talk</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">16:00 - 16:30</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 6.A</span></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 6.B</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">16:30 - 16:50</td>
+    <td class="tg-0lax">{52}</td>
+    <td class="tg-0lax">{2}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">16:50 - 17:10</td>
+    <td class="tg-0lax">{56}</td>
+    <td class="tg-0lax">{65}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">18:30 - 19:30</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">20:30 - 22:30</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Gala dinner</span></td>
+  </tr>
+</tbody></table>
+`
+
+wednesday= `
+<table class="tg">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 40%;">
+    </colgroup>
+
+<thead>
+  <tr>
+    <th class="tg-0lax"><span style="font-weight:bold">01/07/2026</span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Room F1</span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">Room F2</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">09:30 - 10:30</span></td>
+    <td class="tg-0lax" colspan="2">Plenary Talk: {93}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">10:30 - 11:00</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Coffee break</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 7.A</span></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 7.B</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11:00 - 11:20</td>
+    <td class="tg-0lax">{23}</td>
+    <td class="tg-0lax">{13}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11:20 - 11:40</td>
+    <td class="tg-0lax">{40}</td>
+    <td class="tg-0lax">{17}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">11:40 - 12:00</td>
+    <td class="tg-0lax">{71}</td>
+    <td class="tg-0lax">{64}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">11:00 - 12:20</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Short break</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 8.A</span></td>
+    <td class="tg-0lax"><span style="font-weight:bold">Session 8.B</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12:20 - 12:40</td>
+    <td class="tg-0lax">{36}</td>
+    <td class="tg-0lax">{14}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">12:40 - 13:00</td>
+    <td class="tg-0lax">{61}</td>
+    <td class="tg-0lax">{28}</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:normal">13:00 - 13:10</span></td>
+    <td class="tg-0lax" colspan="2"><span style="font-weight:normal">Farewell</span></td>
+  </tr>
+</tbody></table>
+`
+
+cambia = function(day){
+
+  let daynew = day
+  listaid.forEach(id => {
   //const did = dataf.filter(d => d.id == id)
   // monday = monday.replace("{"+id+"}", muestra(did))//`<a href="#${id}">${did.Title}</a>`)
   const did = dataf.find(d => d.id == id)
-  monday = monday.replace("{"+id+"}", `${did.Authors}, <a href="#${id}"><em>${did.Title}</em></a>`)
-
+  if (!isEmptyOrSpaces(did.abstract)){
+    daynew = daynew.replace("{"+id+"}", `${did.Authors}, <a href="#${id}"><em>${did.Title}</em></a>`)
+  }else{
+    daynew = daynew.replace("{"+id+"}", `${did.Authors}, <em>${did.Title}</em>`)
+  }
 })
-return monday
+return daynew
 }
 
 
@@ -232,8 +440,24 @@ return monday
 
 ```{ojs}
 //| echo: false
-html`${cambia()}`
+html`${cambia(monday)}`
 ```
+
+### Tuesday, 30 June 2026
+
+```{ojs}
+//| echo: false
+html`${cambia(tuesday)}`
+```
+
+
+### Wednesday, 1 July 2026
+
+```{ojs}
+//| echo: false
+html`${cambia(wednesday)}`
+```
+
 
 ## Plenary Talks
 
@@ -241,7 +465,9 @@ html`${cambia()}`
 //| echo: false
 datai=dataf.filter(d => d.type == "I").sort((a, b) => a.Authors.localeCompare(b.Authors))
 
-html`${muestra(datai)}`
+html`${muestra_lista(datai)}`
+
+//muestra_lista(datai)
 ```
 
 
@@ -251,7 +477,7 @@ html`${muestra(datai)}`
 //| echo: false
 datat=dataf.filter(d => d.type == "T").sort((a, b) => a.Authors.localeCompare(b.Authors))
 
-html`${muestra(datat)}`
+html`${muestra_lista(datat)}`
 ```
 
 
@@ -261,7 +487,7 @@ html`${muestra(datat)}`
 //| echo: false
 datap=dataf.filter(d => d.type == "P").sort((a, b) => a.Authors.localeCompare(b.Authors))
 
-html`${muestra(datap)}`
+html`${muestra_lista(datap)}`
 
 ```
 
