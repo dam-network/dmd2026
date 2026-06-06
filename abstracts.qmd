@@ -76,7 +76,7 @@ var day=""
 data.forEach(d => {
 if (!isEmptyOrSpaces(d.abstract)) {
     //code = code +"<p  id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></p>"
-    code = code + "<li id='"+d.id+"'>"+ d.Authors+ ", <em>" + d.Title + " </em>\n<p>" + d.abstract + "</p></li>\n"
+    code = code + "<li id='"+d.id+"'><strong>"+ d.Authors+ ", <em>" + d.Title + " </em></strong>\n<p>" + d.abstract + "</p></li>\n"
 }else{
     code = code +"<li id='"+d.id+ "'>" + d.Authors+ ", <em>" + d.Title + " </em></li>"
 }
