@@ -1,5 +1,5 @@
 ---
-title: "Abstracts"
+title: "Programme and Abstracts of Talks and Posters"
 page-layout: full
 ---
 
@@ -10,7 +10,7 @@ page-layout: full
 .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;background:transparent;}
-.tg .tg-btxf{background-color:#f9f9f9;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-btxf{border-color:inherit;text-align:left;vertical-align:top;background-color: rgba(212, 212, 212, 0.4);}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 
@@ -155,17 +155,17 @@ monday = `
   <tr>
     <td class="tg-0pky">10:45 - 11:05</td>
     <td class="tg-0pky">{50}</td>
-    <td class="tg-0pky">{10}</td>
+    <td class="tg-0pky">{23}</td>
   </tr>
   <tr>
     <td class="tg-btxf">11:05 - 11:25</td>
     <td class="tg-btxf">{24}</td>
-    <td class="tg-btxf">{45}</td>
+    <td class="tg-btxf">{40}</td>
   </tr>
   <tr>
     <td class="tg-0pky">11:25 - 11:45</td>
     <td class="tg-0pky">{62}</td>
-    <td class="tg-0pky">{68}</td>
+    <td class="tg-0pky">{21}</td>
   </tr>
   <tr>
     <td class="tg-btxf">11:45 - 12:00</td>
@@ -375,17 +375,17 @@ wednesday= `
   </tr>
   <tr>
     <td class="tg-0pky">11:00 - 11:20</td>
-    <td class="tg-0pky">{23}</td>
+    <td class="tg-0pky">{10}</td>
     <td class="tg-0pky">{13}</td>
   </tr>
   <tr>
     <td class="tg-btxf">11:20 - 11:40</td>
-    <td class="tg-btxf">{40}</td>
+    <td class="tg-btxf">{45}</td>
     <td class="tg-btxf">{17}</td>
   </tr>
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">11:40 - 12:00</span></td>
-    <td class="tg-0pky">{71}</td>
+    <td class="tg-0pky">{68}</td>
     <td class="tg-0pky">{64}</td>
   </tr>
   <tr>
@@ -430,7 +430,11 @@ cambia = function(day){
 return daynew
 }
 
+//html `${monday}`
 
+//html `${tuesday}`
+
+//html `${wednesday}`
 ```
 
 
