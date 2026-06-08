@@ -33,7 +33,8 @@ Particular attention has been devoted to sparse graph classes, such as planar gr
 Joint work with Gil Puig i Surroca.
 </details>
 <details>
-  <summary>[Lisa Sauermann](https://www.iam.uni-bonn.de/users/sauermann/home), Universität Bonn, TBA</summary>
+  <summary>[Lisa Sauermann](https://www.iam.uni-bonn.de/users/sauermann/home), Universität Bonn, Asymptotically-tight packing and covering with transversal bases in Rota’s basis conjecture</summary>
+  Rota’s basis conjecture from 1989 asserts that, given any n bases $B_1,\dots,B_n$ of a vector space of dimension $n$ (or, more generally, a matroid of rank $n$), one can find a collection of n disjoint transversal bases. In other words, this means that the union $B_1 \cup \dots \cup B_n$ can be decomposed into $n$ new bases of the vector space (or matroid), each consisting of exactly one element from each of the original bases $B_1,\dots,B_n$. In this talk, we discuss some progress towards this famous conjecture, showing that the union $B_1 \cup \dots \cup B_n$ contains $(1-o(1))n$ disjoint transversal bases, and also that the union $B_1 \cup \dots \cup B_n$ can be covered by $(1+o(1))n$ transversal bases. Joint work with Richard Montgomery.
 </details>
 <details>
   <summary>[Dimitrios Thilikos](https://www.lirmm.fr/~thilikosto/), LIRMM, Montpellier, Deciding Asymptotic Properties of Minor-Closed Graph Classes
