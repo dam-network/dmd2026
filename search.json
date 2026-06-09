@@ -2,11 +2,41 @@
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
-    "title": "Schedule of the DMD 2026",
+    "title": "Programme of the DMD 2026",
     "section": "",
-    "text": "Rooms: F1 and F2, both located at the physics building of the Faculty of Science\n\n28 June\n20:00 Reception. Carmen de la Victoria\n\n\n29 June\n\n\n\n\n\n\n\n\n\nRoom F1\nRoom F2\n\n\n08:15 - 08:55\nRegistration: hall Faculty of Science\n\n\n09:00 - 09:15\nOpening\n\n\n09:15 - 10:15\nPlenary Talk\n\n\n10:15 - 10:45\nCoffee break\n\n\n10:45 - 11:45\nThree contributed talks\nThree contributed talks\n\n\n11:45 - 12:00\nShort break\n\n\n12:00 - 13:00\nThree contributed talks\nThree contributed talks\n\n\n13:00 - 15:00\nLunch\n\n\n15:00 - 16:00\nPlenary talk\n\n\n16:00 - 16:30\nCoffee break\n\n\n16:30 - 17:10\nTwo contributed talks\nTwo contributed talks\n\n\n17:10 - 18:00\nPoster session\n\n\n18:00 - 18:30\nBusiness meeting\n\n\n\n\n\n30 June\n\n\n\n\n\n\n\n\n\nRoom F1\nRoom F2\n\n\n09:15 - 10:15\nPlenary Talk\n\n\n10:15 - 10:45\nCoffee break\n\n\n10:45 - 11:45\nThree contributed talks\nThree contributed talks\n\n\n11:45 - 12:00\nShort break\n\n\n12:00 - 13:00\nThree contributed talks\nThree contributed talks\n\n\n13:00 - 13:10\nGroup photo\n\n\n13:10 - 15:00\nLunch\n\n\n15:00 - 16:00\nRamon Lull prize talk\n\n\n16:00 - 16:30\nCoffee break\n\n\n16:30 - 17:10\nTwo contributed talks\nTwo contributed talks\n\n\n18:30 - 19:30\nExcursion: Math walk\n\n\n20:30 - 22:30\nGala dinner\n\n\n\n\n\n1 July\n\n\n\n\n\n\n\n\n\nRoom F1\nRoom F2\n\n\n09:30 - 10:30\nPlenary Talk\n\n\n10:30 - 11:00\nCoffee break\n\n\n11:00 - 12:00\nThree contributed talks\nThree contributed talks\n\n\n11:00 - 12:20\nShort break\n\n\n12:20 - 13:00\nTwo contributed talks\nTwo contributed talks\n\n\n13:00 - 13:10\nFarewell\n\n\n\n\n\n\n\n Back to top",
+    "text": "Rooms: F1 and F2, both located at the physics building of the Faculty of Science",
     "crumbs": [
-      "Schedule"
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "schedule.html#plenary-talks",
+    "href": "schedule.html#plenary-talks",
+    "title": "Programme of the DMD 2026",
+    "section": "Plenary Talks",
+    "text": "Plenary Talks\n\ndatai=dataf.filter(d =&gt; d.type == \"I\").sort((a, b) =&gt; a.Apellidos.localeCompare(b.Apellidos))\n\nhtml`${muestra_lista(datai)}`",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "schedule.html#talks",
+    "href": "schedule.html#talks",
+    "title": "Programme of the DMD 2026",
+    "section": "Talks",
+    "text": "Talks\n\ndatat=dataf.filter(d =&gt; d.type == \"T\").sort((a, b) =&gt; a.Apellidos.localeCompare(b.Apellidos))\n\nhtml`${muestra_lista(datat)}`",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
+    "objectID": "schedule.html#posters",
+    "href": "schedule.html#posters",
+    "title": "Programme of the DMD 2026",
+    "section": "Posters",
+    "text": "Posters\n\ndatap=dataf.filter(d =&gt; d.type == \"P\").sort((a, b) =&gt; a.Apellidos.localeCompare(b.Apellidos))\n\nhtml`${muestra_lista(datap)}`",
+    "crumbs": [
+      "Programme"
     ]
   },
   {
