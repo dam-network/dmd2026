@@ -29,3 +29,25 @@ A limited number of accommodation grants will be available for graduate and PhD 
 ### Registration form
 
 Registration can be done through this [form](https://forms.gle/M7EJzfKeuB4GHfzw5).
+
+### List of registered participants
+
+```{ojs}
+//| echo: false
+dataf = FileAttachment("lista-participantes.tsv").tsv()
+
+data=dataf.sort((a, b) => a.Apellidos.localeCompare(b.Apellidos))
+
+muestra_lista = function(data){
+var code = "<div id='talks'><ul>"
+var day=""
+data.forEach(d => {
+    code = code + "<li>"+ d.Nombre+" "+ d.Apellidos+ ", <em>" + d.Universidad + ", "+d.Pais+"</em></strong></li>\n"
+});
+code = code + "</ul></div>"
+
+return code
+}
+
+html `${muestra_lista(data)}`
+```
