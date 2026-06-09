@@ -28,7 +28,7 @@ website:
       - registration.qmd
       - committees.qmd
       - plenary.qmd
-      - text: "Schedule"
+      - text: "Programme"
         href: schedule.qmd
       - text: "Important Dates"
         href: index.qmd#important-dates
