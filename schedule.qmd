@@ -227,7 +227,7 @@ monday = `
   </tr>
   <tr>
     <td class="tg-btxf">09:15 - 10:15</td>
-    <td class="tg-btxf">Plenary Talk: {91}</td>
+    <td class="tg-btxf" colspan="2">Plenary Talk: {91} (Chair: Francisco Santos)</td>
     <td class="tg-btxf"></td>
   </tr>
   <tr>
@@ -237,8 +237,8 @@ monday = `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf"><strong>Session 1.A</strong></td>
-    <td class="tg-btxf"><strong>Session 1.B</strong></td>
+    <td class="tg-btxf"><strong>Session 1.A</strong> (Chair: Pablo Candela)</td>
+    <td class="tg-btxf"><strong>Session 1.B</strong> (Chair: Delia Garijo)</td>
   </tr>
   <tr>
     <td class="tg-0pky">10:45 - 11:05</td>
@@ -262,8 +262,8 @@ monday = `
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><strong>Session 2.A</strong></td>
-    <td class="tg-0pky"><strong>Session 2.B</strong></td>
+    <td class="tg-0pky"><strong>Session 2.A</strong> (Chair: Clément Requilé)</td>
+    <td class="tg-0pky"><strong>Session 2.B</strong> (Chair: Martina Juhnke)</td>
   </tr>
   <tr>
     <td class="tg-btxf">12:00 - 12:20</td>
@@ -287,7 +287,7 @@ monday = `
   </tr>
   <tr>
     <td class="tg-btxf">15:00 - 16:00</td>
-    <td class="tg-btxf">Plenary talk: {92}</td>
+    <td class="tg-btxf">Plenary talk: {92} (Chair: Amanda Montejano)</td>
     <td class="tg-btxf"></td>
   </tr>
   <tr>
@@ -297,8 +297,8 @@ monday = `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf"><strong>Session 3.A</strong></td>
-    <td class="tg-btxf"><strong>Session 3.B</strong></td>
+    <td class="tg-btxf"><strong>Session 3.A</strong> (Chair: Sergio Cabello)</td>
+    <td class="tg-btxf"><strong>Session 3.B</strong> (Chair: Michael Drmota)</td>
   </tr>
   <tr>
     <td class="tg-0pky">16:30 - 16:50</td>
@@ -341,7 +341,7 @@ tuesday= `
 <tbody>
   <tr>
     <td class="tg-btxf"><span style="font-weight:normal">09:15 - 10:15</span></td>
-    <td class="tg-btxf" colspan="2">Plenary Talk: {94}</td>
+    <td class="tg-btxf" colspan="2">Plenary Talk: {94} (Chair: Alberto Espuny)</td>
   </tr>
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">10:15 - 10:45</span></td>
@@ -349,8 +349,8 @@ tuesday= `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf"><span style="font-weight:bold">Session 4.A</span></td>
-    <td class="tg-btxf"><span style="font-weight:bold">Session 4.B</span></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 4.A</span> (Chair: Lisa Sauermann)</td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 4.B</span> (Chair: David Orden)</td>
   </tr>
   <tr>
     <td class="tg-0pky">10:45 - 11:05</td>
@@ -373,8 +373,8 @@ tuesday= `
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 5.A</span></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 5.B</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 5.A</span> (Chair: Guillem Perarnau)</td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 5.B</span> (Chair: Jean Cardinal)</td>
   </tr>
   <tr>
     <td class="tg-btxf">12:00 - 12:20</td>
@@ -401,7 +401,7 @@ tuesday= `
   </tr>
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">15:00 - 16:00</span></td>
-    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Ramon Lull prize talk</span></td>
+    <td class="tg-0pky" colspan="2"><a href="llull.html"><span style="font-weight:normal">Ramon LLull prize talk</span></a></td>
   </tr>
   <tr>
     <td class="tg-btxf"><span style="font-weight:normal">16:00 - 16:30</span></td>
@@ -409,8 +409,8 @@ tuesday= `
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 6.A</span></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 6.B</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 6.A</span> (Chair: Lluís Vena)</td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 6.B</span> (Chair: Patrick Morris)</td>
   </tr>
   <tr>
     <td class="tg-btxf">16:30 - 16:50</td>
@@ -450,7 +450,7 @@ wednesday= `
 <tbody>
   <tr>
     <td class="tg-btxf"><span style="font-weight:normal">09:30 - 10:30</span></td>
-    <td class="tg-btxf" colspan="2">Plenary Talk: {93}</td>
+    <td class="tg-btxf" colspan="2">Plenary Talk: {93} (Chair: Marc Noy)</td>
   </tr>
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">10:30 - 11:00</span></td>
@@ -458,8 +458,8 @@ wednesday= `
   </tr>
   <tr>
     <td class="tg-btxf"></td>
-    <td class="tg-btxf"><span style="font-weight:bold">Session 7.A</span></td>
-    <td class="tg-btxf"><span style="font-weight:bold">Session 7.B</span></td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 7.A</span> (Chair: Kolja Knauer)</td>
+    <td class="tg-btxf"><span style="font-weight:bold">Session 7.B</span> (Chair: Andrew Goodall)</td>
   </tr>
   <tr>
     <td class="tg-0pky">11:00 - 11:20</td>
@@ -482,8 +482,8 @@ wednesday= `
   </tr>
   <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 8.A</span></td>
-    <td class="tg-0pky"><span style="font-weight:bold">Session 8.B</span></td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 8.A</span> (Chair: Gyula Karolyi)</td>
+    <td class="tg-0pky"><span style="font-weight:bold">Session 8.B</span> (Chair: Mónica Blanco)</td>
   </tr>
   <tr>
     <td class="tg-btxf">12:20 - 12:40</td>
