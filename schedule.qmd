@@ -316,10 +316,10 @@ monday = `
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-btxf">18:00 - 18:30</td>
-    <td class="tg-btxf">Business meeting</td>
-    <td class="tg-btxf"></td>
+    <td class="tg-btxf"><span style="font-weight:normal">20:15 - 21:15</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
   </tr>
+
 </tbody></table>
 `
 
@@ -422,10 +422,13 @@ tuesday= `
     <td class="tg-0pky">{56}</td>
     <td class="tg-0pky">{65}</td>
   </tr>
-  <tr>
-    <td class="tg-btxf"><span style="font-weight:normal">18:30 - 19:30</span></td>
-    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
+
+<tr>
+    <td class="tg-btxf">17:20 - 18:00</td>
+    <td class="tg-btxf">Business meeting</td>
+    <td class="tg-btxf"></td>
   </tr>
+
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">20:30 - 22:30</span></td>
     <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Gala dinner</span></td>
