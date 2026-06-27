@@ -317,7 +317,7 @@ monday = `
   </tr>
   <tr>
     <td class="tg-btxf"><span style="font-weight:normal">20:15 - 21:15</span></td>
-    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Excursion: Math walk</span></td>
+    <td class="tg-btxf" colspan="2"><span style="font-weight:normal">Excursion: Math walk (meeting point Plaza Nueva)</span></td>
   </tr>
 
 </tbody></table>
