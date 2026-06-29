@@ -431,7 +431,7 @@ tuesday= `
 
   <tr>
     <td class="tg-0pky"><span style="font-weight:normal">20:30 - 22:30</span></td>
-    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Gala dinner</span></td>
+    <td class="tg-0pky" colspan="2"><span style="font-weight:normal">Gala dinner (Turia Hotel)</span></td>
   </tr>
 </tbody></table>
 `
