@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "schedule.html#ramon-llull-prize-talk",
+    "href": "schedule.html#ramon-llull-prize-talk",
+    "title": "Programme of the DMD 2026",
+    "section": "Ramon Llull Prize Talk",
+    "text": "Ramon Llull Prize Talk\n\ndatar=dataf.filter(d =&gt; d.type == \"R\").sort((a, b) =&gt; a.Apellidos.localeCompare(b.Apellidos))\n\nhtml`${muestra_lista(datar)}`",
+    "crumbs": [
+      "Programme"
+    ]
+  },
+  {
     "objectID": "schedule.html#talks",
     "href": "schedule.html#talks",
     "title": "Programme of the DMD 2026",
