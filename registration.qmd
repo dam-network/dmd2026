@@ -51,3 +51,6 @@ return code
 
 html `${muestra_lista(data)}`
 ```
+
+
+![](./img/foto-grupal-1.jpeg){.lightbox}
